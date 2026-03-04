@@ -5,6 +5,8 @@ BASE_DIR = Path(__file__).parent.parent  # points to top_video_project/
 
 DATA_DIR      = BASE_DIR / "data"
 ASSETS_DIR    = BASE_DIR / "assets"
+FONTS_DIR     = ASSETS_DIR / "fonts"
+AVATARS_DIR   = ASSETS_DIR / "avatars"
 OUTPUT_DIR    = BASE_DIR / "output"
 LOG_FILE        = BASE_DIR / "pipeline.log"
 
@@ -22,7 +24,6 @@ ALL_DIRS = [
 ]
 
 VIDEOS_CSV      = DATA_DIR / "videos.csv"
-LAYOUT_TEMPLATE   = ASSETS_DIR / "layout_template.png"
 FINAL_OUTPUT      = FINAL_DIR / "top.mp4"
 
 # Video settings
@@ -31,4 +32,14 @@ TARGET_FPS     = 30
 TARGET_RESOLUTION = "1920:1080"
 PAD_COLOR = "black"
 VIDEO_CODEC = detect_codec()
-VAAPI_DEVICE: str = "/dev/dri/renderD128"
+VAAPI_DEVICE = "/dev/dri/renderD128"
+
+
+# Overlay settings
+FONT_BOLD = FONTS_DIR / "Roboto-Bold.ttf"
+FONT_REGULAR = FONTS_DIR / "Roboto-Regular.ttf"
+REVIEWERS = [
+    {"name": "Andy", "avatar": AVATARS_DIR / "andy.png", "score_column": "andy_score"},
+    {"name": "Alex", "avatar": AVATARS_DIR / "alex.png", "score_column": "alex_score"},
+    {"name": "Astik", "avatar": AVATARS_DIR / "astik.png", "score_column": "astik_score"},
+]

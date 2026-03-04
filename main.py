@@ -1,6 +1,7 @@
 import logging
 from src.config import ALL_DIRS, LOG_FILE, VIDEO_CODEC
 from src.downloader import download_all
+from src.image import generate_all
 from src.video import normalize_all, trim_all
 import os
 
@@ -25,3 +26,4 @@ if __name__ == "__main__":
     download_all()
     trim_all()
     normalize_all()
+    generate_all()
