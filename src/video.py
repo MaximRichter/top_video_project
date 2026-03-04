@@ -26,7 +26,7 @@ from src.config import (
 
 logger = logging.getLogger(__name__)
 
-def trim_video(index: int, trim_start: int, trim_duration: int) -> bool:
+def trim_video(index: int, trim_start: float, trim_duration: float) -> bool:
     output_path = TRIMMED_DIR / f"{index}.mp4"
 
     if output_path.exists():
