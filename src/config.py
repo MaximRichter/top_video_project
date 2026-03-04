@@ -1,4 +1,5 @@
 from pathlib import Path
+from src.system import detect_codec
 
 BASE_DIR = Path(__file__).parent.parent  # points to top_video_project/
 
@@ -29,4 +30,5 @@ FADE_DURATION  = 2    # seconds
 TARGET_FPS     = 30
 TARGET_RESOLUTION = "1920:1080"
 PAD_COLOR = "black"
-VIDEO_CODEC = "libx264"  # CPU (libx264) default, change to h264_nvenc / h264_amf / h264_qsv for GPU
+VIDEO_CODEC = detect_codec()
+VAAPI_DEVICE: str = "/dev/dri/renderD128"

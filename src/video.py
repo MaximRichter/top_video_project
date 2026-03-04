@@ -1,8 +1,10 @@
 import subprocess
 import logging
+import json
 import pandas as pd
 
 from src.config import (
+    VAAPI_DEVICE,
     VIDEOS_CSV,
     TRIMMED_DIR,
     OVERLAYED_DIR,
@@ -34,14 +36,20 @@ def trim_video(index: int, trim_start: int, trim_duration: int) -> bool:
 
     input_path = input_files[0]
 
+    hw_upload: str = ",format=nv12,hwupload" if VIDEO_CODEC == "h264_vaapi" else ""
+
     video_filter: str = (
     f"scale={TARGET_RESOLUTION}:force_original_aspect_ratio=decrease," +
     f"pad={TARGET_RESOLUTION}:(ow-iw)/2:(oh-ih)/2:{PAD_COLOR}," +
-    f"fps={TARGET_FPS}"
+    f"fps={TARGET_FPS}" +
+    f"{hw_upload}"
 )
 
+    vaapi_device: list[str] = ["-vaapi_device", VAAPI_DEVICE] if VIDEO_CODEC == "h264_vaapi" else []
+
     command: list[str] = [
-        "ffmpeg",
+        "ffmpeg", "-y",
+        *vaapi_device,
         "-ss", str(trim_start),
         "-i", str(input_path),
         "-t", str(trim_duration),
@@ -71,3 +79,83 @@ def trim_all() -> None:
             trim_start=int(df['trim_start'].iloc[i]),
             trim_duration=int(df['trim_duration'].iloc[i])
         )
+
+
+
+def normalize_audio(index: int) -> bool:
+    input_files = list(TRIMMED_DIR.glob(f"{index}.*"))
+    if not input_files:
+        logger.error(f"[{index}] No trimmed file found, skipping normalize.")
+        return False
+
+    input_path = input_files[0]
+    output_path = NORMALISED_DIR / f"{index}.mp4"
+
+    if output_path.exists():
+        logger.info(f"[{index}] Already normalised, skipping.")
+        return True
+
+    pass1_filter = "loudnorm=I=-16:TP=-1.5:LRA=11:print_format=json"
+    pass1_command = [
+        "ffmpeg", "-y",
+        "-i", str(input_path),
+        "-af", pass1_filter,
+        "-vn", "-f", "null", "/dev/null"
+    ]
+
+    try:
+        result = subprocess.run(
+            pass1_command,
+            stdout=subprocess.DEVNULL,
+            stderr=subprocess.PIPE,
+            text=True,
+            check=False
+        )
+
+        stderr = result.stderr
+        json_start = stderr.rfind("{")
+        json_end = stderr.rfind("}") + 1
+        measurements = json.loads(stderr[json_start:json_end])
+
+    except Exception as e:
+        logger.error(f"[{index}] Normalize pass 1 failed: {e}")
+        return False
+
+    pass2_filter = (
+        f"loudnorm=I=-16:TP=-1.5:LRA=11:linear=true:"
+        f"measured_I={measurements['input_i']}:"
+        f"measured_TP={measurements['input_tp']}:"
+        f"measured_LRA={measurements['input_lra']}:"
+        f"measured_thresh={measurements['input_thresh']}:"
+        f"offset={measurements['target_offset']}:"
+        f"print_format=summary"
+    )
+    pass2_command = [
+        "ffmpeg", "-y",
+        "-i", str(input_path),
+        "-af", pass2_filter,
+        "-c:v", "copy",
+        "-c:a", "aac",
+        str(output_path)
+    ]
+
+    try:
+        subprocess.run(
+            pass2_command,
+            stdout=subprocess.DEVNULL,
+            stderr=subprocess.PIPE,
+            check=True
+        )
+        logger.info(f"[{index}] Normalised successfully.")
+        return True
+
+    except subprocess.CalledProcessError as e:
+        logger.error(f"[{index}] Normalize pass 2 failed: {e.stderr.decode()}")
+        return False
+
+
+def normalize_all() -> None:
+    df = pd.read_csv(VIDEOS_CSV, delimiter=";")
+    for i in range(len(df)):
+        index: int = i + 1
+        normalize_audio(index)
