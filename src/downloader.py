@@ -3,7 +3,7 @@ import logging
 import json
 import pandas as pd
 
-from src.config import VIDEOS_CSV, DOWNLOADS_DIR
+from src.config import VIDEOS_CSV, DOWNLOADS_DIR, BROWSER_COOKIES
 
 logger = logging.getLogger(__name__)
 
@@ -34,6 +34,8 @@ def download_video(index: int, url: str) -> bool:
     output_template = str(DOWNLOADS_DIR / f"{index}.%(ext)s")
     command = [
         "yt-dlp",
+        "--cookies-from-browser", BROWSER_COOKIES,
+        "--remote-components", "ejs:github",
         "--no-overwrites",
         "-o", output_template,
         url

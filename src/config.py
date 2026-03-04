@@ -43,3 +43,5 @@ REVIEWERS = [
     {"name": "Alex", "avatar": AVATARS_DIR / "alex.png", "score_column": "alex_score"},
     {"name": "Astik", "avatar": AVATARS_DIR / "astik.png", "score_column": "astik_score"},
 ]
+
+BROWSER_COOKIES = "firefox:~/.zen/0uz1xbvm.Default (release)/"

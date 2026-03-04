@@ -1,6 +1,8 @@
 import subprocess
+import select
 import logging
 import json
+import sys
 import pandas as pd
 
 from src.config import (
@@ -11,6 +13,7 @@ from src.config import (
     NORMALISED_DIR,
     FADED_DIR,
     FINAL_DIR,
+    FINAL_OUTPUT,
     TARGET_RESOLUTION,
     PAD_COLOR,
     TARGET_FPS,
@@ -314,3 +317,88 @@ def fade_all() -> None:
     df = pd.read_csv(VIDEOS_CSV, delimiter=";")
     for i in range(len(df)):
         fade_video(i + 1)
+
+
+def prompt_with_timeout(message: str, timeout: int, default: str) -> str:
+    print(message, flush=True)
+    for remaining in range(timeout, 0, -1):
+        print(f"\rSelecting default ({default}) in {remaining}s... ", end="", flush=True)
+        if sys.platform != "win32":
+            ready, _, _ = select.select([sys.stdin], [], [], 1)
+            if ready:
+                choice = sys.stdin.readline().strip()
+                print()
+                return choice
+        else:
+            import msvcrt, time
+            start = time.time()
+            while time.time() - start < 1:
+                if msvcrt.kbhit():
+                    choice = input()
+                    print()
+                    return choice
+    print(f"\nTimeout reached, using default: {default}")
+    return default
+
+
+def concatenate_all() -> bool:
+    df = pd.read_csv(VIDEOS_CSV, delimiter=";")
+
+    message = (
+    "\nConcatenation mode:\n"
+    "  [1] Only concatenate if all downloaded videos are present\n"
+    "  [2] Skip missing files and concatenate available videos (default)\n"
+    "Enter choice (1/2): "
+)
+    choice = prompt_with_timeout(message, timeout=300, default="2")
+
+    faded_files = []
+    for i in range(len(df)):
+        index = i + 1
+        files = list(FADED_DIR.glob(f"{index}.*"))
+        if not files:
+            if choice == "2":
+                logger.warning(f"[{index}] No faded file found, skipping.")
+                continue
+            else:
+                download_files = list(DOWNLOADS_DIR.glob(f"{index}.*"))
+                if not download_files:
+                    logger.info(f"[{index}] No download found, skipping.")
+                    continue
+                logger.error(f"[{index}] No faded file found but download exists, aborting.")
+                return False
+        faded_files.append(files[0])
+
+    faded_files.reverse()
+
+    if not faded_files:
+        logger.error("No faded files found at all, aborting.")
+        return False
+
+    concat_list = FINAL_DIR / "concat_list.txt"
+    with open(concat_list, "w") as f:
+        for file in faded_files:
+            f.write(f"file '{file.resolve()}'\n")
+
+    command = [
+        "ffmpeg", "-y",
+        "-f", "concat",
+        "-safe", "0",
+        "-i", str(concat_list),
+        "-c", "copy",
+        str(FINAL_OUTPUT)
+    ]
+
+    try:
+        subprocess.run(
+            command,
+            stdout=subprocess.DEVNULL,
+            stderr=subprocess.PIPE,
+            check=True
+        )
+        logger.info("Concatenation complete. Final output: top.mp4")
+        return True
+
+    except subprocess.CalledProcessError as e:
+        logger.error(f"Concatenation failed: {e.stderr.decode()}")
+        return False
