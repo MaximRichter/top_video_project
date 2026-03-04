@@ -223,3 +223,94 @@ def overlay_all() -> None:
     df = pd.read_csv(VIDEOS_CSV, delimiter=";")
     for i in range(len(df)):
         overlay_video(i + 1)
+
+
+def fade_video(index: int) -> bool:
+    input_files = list(OVERLAYED_DIR.glob(f"{index}.*"))
+    if not input_files:
+        logger.error(f"[{index}] No overlayed file found, skipping fade.")
+        return False
+
+    input_path = input_files[0]
+    output_path = FADED_DIR / f"{index}.mp4"
+
+    if output_path.exists():
+        logger.info(f"[{index}] Already faded, skipping.")
+        return True
+
+    # Get duration of the video
+    probe_command = [
+        "ffprobe", "-v", "error",
+        "-show_entries", "format=duration",
+        "-of", "default=noprint_wrappers=1:nokey=1",
+        str(input_path)
+    ]
+
+    try:
+        result = subprocess.run(
+            probe_command,
+            stdout=subprocess.PIPE,
+            stderr=subprocess.PIPE,
+            text=True,
+            check=True
+        )
+        duration = float(result.stdout.strip())
+    except subprocess.CalledProcessError as e:
+        logger.error(f"[{index}] ffprobe failed: {e.stderr}")
+        return False
+
+    fade_out_start = duration - FADE_DURATION
+
+    vaapi_device = ["-vaapi_device", VAAPI_DEVICE] if VIDEO_CODEC == "h264_vaapi" else []
+
+    if VIDEO_CODEC == "h264_vaapi":
+        video_filter = (
+            f"[0:v]format=yuv420p,"
+            f"fade=t=in:st=0:d={FADE_DURATION},"
+            f"fade=t=out:st={fade_out_start}:d={FADE_DURATION},"
+            f"format=nv12,hwupload[out]"
+        )
+        filter_args = ["-filter_complex", video_filter, "-map", "[out]", "-map", "0:a"]
+
+    else:
+        video_filter = (
+            f"fade=t=in:st=0:d={FADE_DURATION},"
+            f"fade=t=out:st={fade_out_start}:d={FADE_DURATION}"
+        )
+        filter_args = ["-vf", video_filter]
+
+    audio_filter = (
+        f"afade=t=in:st=0:d={FADE_DURATION},"
+        f"afade=t=out:st={fade_out_start}:d={FADE_DURATION}"
+    )
+
+    command = [
+        "ffmpeg", "-y",
+        *vaapi_device,
+        "-i", str(input_path),
+        *filter_args,
+        "-af", audio_filter,
+        "-c:v", VIDEO_CODEC,
+        "-c:a", "aac",
+        str(output_path)
+    ]
+
+    try:
+        subprocess.run(
+            command,
+            stdout=subprocess.DEVNULL,
+            stderr=subprocess.PIPE,
+            check=True
+        )
+        logger.info(f"[{index}] Faded successfully.")
+        return True
+
+    except subprocess.CalledProcessError as e:
+        logger.error(f"[{index}] Fade failed: {e.stderr.decode()}")
+        return False
+
+
+def fade_all() -> None:
+    df = pd.read_csv(VIDEOS_CSV, delimiter=";")
+    for i in range(len(df)):
+        fade_video(i + 1)
