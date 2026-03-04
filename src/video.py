@@ -343,13 +343,12 @@ def prompt_with_timeout(message: str, timeout: int, default: str) -> str:
 
 def concatenate_all() -> bool:
     df = pd.read_csv(VIDEOS_CSV, delimiter=";")
-
     message = (
-    "\nConcatenation mode:\n"
-    "  [1] Only concatenate if all downloaded videos are present\n"
-    "  [2] Skip missing files and concatenate available videos (default)\n"
-    "Enter choice (1/2): "
-)
+        "\nConcatenation mode:\n"
+        "  [1] Only concatenate if all downloaded videos are present\n"
+        "  [2] Skip missing files and concatenate available videos (default)\n"
+        "Enter choice (1/2): "
+    )
     choice = prompt_with_timeout(message, timeout=300, default="2")
 
     faded_files = []
@@ -368,24 +367,37 @@ def concatenate_all() -> bool:
                 logger.error(f"[{index}] No faded file found but download exists, aborting.")
                 return False
         faded_files.append(files[0])
-
+    
     faded_files.reverse()
 
     if not faded_files:
         logger.error("No faded files found at all, aborting.")
         return False
 
-    concat_list = FINAL_DIR / "concat_list.txt"
-    with open(concat_list, "w") as f:
-        for file in faded_files:
-            f.write(f"file '{file.resolve()}'\n")
+    inputs = []
+    filter_parts = []
+    for i, file in enumerate(faded_files):
+        inputs += ["-i", str(file)]
+        filter_parts.append(f"[{i}:v][{i}:a]")
+
+    n = len(faded_files)
+    vaapi_device = ["-vaapi_device", VAAPI_DEVICE] if VIDEO_CODEC == "h264_vaapi" else []
+
+    if VIDEO_CODEC == "h264_vaapi":
+        filter_complex = "".join(filter_parts) + f"concat=n={n}:v=1:a=1[vraw][a];[vraw]format=nv12,hwupload[v]"
+        map_args = ["-map", "[v]", "-map", "[a]"]
+    else:
+        filter_complex = "".join(filter_parts) + f"concat=n={n}:v=1:a=1[v][a]"
+        map_args = ["-map", "[v]", "-map", "[a]"]
 
     command = [
         "ffmpeg", "-y",
-        "-f", "concat",
-        "-safe", "0",
-        "-i", str(concat_list),
-        "-c", "copy",
+        *vaapi_device,
+        *inputs,
+        "-filter_complex", filter_complex,
+        *map_args,
+        "-c:v", VIDEO_CODEC,
+        "-c:a", "aac",
         str(FINAL_OUTPUT)
     ]
 
@@ -402,3 +414,4 @@ def concatenate_all() -> bool:
     except subprocess.CalledProcessError as e:
         logger.error(f"Concatenation failed: {e.stderr.decode()}")
         return False
+

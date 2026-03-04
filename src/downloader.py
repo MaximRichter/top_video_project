@@ -3,11 +3,12 @@ import logging
 import json
 import pandas as pd
 
-from src.config import VIDEOS_CSV, DOWNLOADS_DIR, BROWSER_COOKIES
+from src.config import VIDEOS_CSV, DOWNLOADS_DIR, BROWSER_COOKIES, ALL_DIRS
 
 logger = logging.getLogger(__name__)
 
 URLS_RECORD = DOWNLOADS_DIR / "url_record.json"
+
 
 def load_url_record() -> dict[str, str]:
     if URLS_RECORD.exists():
@@ -16,7 +17,6 @@ def load_url_record() -> dict[str, str]:
 
 def save_url_record(record: dict[str, str]) -> None:
     URLS_RECORD.write_text(json.dumps(record, indent=2))
-
 
 
 def download_video(index: int, url: str) -> bool:

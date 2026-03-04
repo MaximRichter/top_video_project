@@ -14,11 +14,6 @@ logging.basicConfig(
     ]
 )
 
-
-def setup():
-    for directory in ALL_DIRS:
-        os.makedirs(directory, exist_ok=True)
-
 if __name__ == "__main__":
     setup()
     logger = logging.getLogger(__name__)
