@@ -2,7 +2,7 @@ import logging
 from src.config import ALL_DIRS, LOG_FILE, VIDEO_CODEC
 from src.downloader import download_all
 from src.image import generate_all
-from src.video import normalize_all, trim_all
+from src.video import normalize_all, overlay_all, trim_all
 import os
 
 logging.basicConfig(
@@ -27,3 +27,4 @@ if __name__ == "__main__":
     trim_all()
     normalize_all()
     generate_all()
+    overlay_all()

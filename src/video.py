@@ -17,6 +17,7 @@ from src.config import (
     FADE_DURATION,
     DOWNLOADS_DIR,
     VIDEO_CODEC,
+    IMAGES_DIR,
 )
 
 
@@ -159,3 +160,66 @@ def normalize_all() -> None:
     for i in range(len(df)):
         index: int = i + 1
         normalize_audio(index)
+
+
+def overlay_video(index: int) -> bool:
+    input_files = list(NORMALISED_DIR.glob(f"{index}.*"))
+    if not input_files:
+        logger.error(f"[{index}] No normalised file found, skipping overlay.")
+        return False
+
+    input_path = input_files[0]
+    overlay_path = IMAGES_DIR / f"{index}.png"
+    output_path = OVERLAYED_DIR / f"{index}.mp4"
+
+    if not overlay_path.exists():
+        logger.error(f"[{index}] No overlay image found, skipping overlay.")
+        return False
+
+    if output_path.exists():
+        logger.info(f"[{index}] Already overlayed, skipping.")
+        return True
+
+    command = [
+        "ffmpeg", "-y",
+        "-i", str(input_path),
+        "-i", str(overlay_path),
+        "-filter_complex", "[0:v][1:v]overlay=0:0",
+        "-c:v", VIDEO_CODEC,
+        "-c:a", "copy",
+        str(output_path)
+    ]
+
+    if VIDEO_CODEC == "h264_vaapi":
+        command = [
+            "ffmpeg", "-y",
+            "-vaapi_device", VAAPI_DEVICE,
+            "-i", str(input_path),
+            "-i", str(overlay_path),
+            "-filter_complex", "[0:v]format=nv12[v];[v][1:v]overlay=0:0,format=nv12,hwupload[out]",
+            "-map", "[out]",
+            "-map", "0:a",
+            "-c:v", VIDEO_CODEC,
+            "-c:a", "copy",
+            str(output_path)
+        ]
+
+    try:
+        subprocess.run(
+            command,
+            stdout=subprocess.DEVNULL,
+            stderr=subprocess.PIPE,
+            check=True
+        )
+        logger.info(f"[{index}] Overlay applied successfully.")
+        return True
+
+    except subprocess.CalledProcessError as e:
+        logger.error(f"[{index}] Overlay failed: {e.stderr.decode()}")
+        return False
+
+
+def overlay_all() -> None:
+    df = pd.read_csv(VIDEOS_CSV, delimiter=";")
+    for i in range(len(df)):
+        overlay_video(i + 1)
