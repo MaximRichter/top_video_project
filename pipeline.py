@@ -20,7 +20,7 @@ def format_elapsed(seconds: float) -> str:
     return str(timedelta(seconds=round(seconds)))
 
 
-def run_stage(name: str, indices: list[int], func) -> tuple[int, int, float]:
+def run_stage(name: str, indices: list[int], func, cleanup_dir: Path | None = None) -> tuple[int, int, float]:
     success, failed = 0, 0
     start = time.time()
 
@@ -29,6 +29,9 @@ def run_stage(name: str, indices: list[int], func) -> tuple[int, int, float]:
             result = func(index)
             if result:
                 success += 1
+                if cleanup_dir is not None:
+                    for f in cleanup_dir.glob(f"{index}.*"):
+                        f.unlink()
             else:
                 failed += 1
             bar.set_postfix(ok=success, fail=failed)
@@ -51,22 +54,22 @@ def main():
     summary = []
 
     stages = [
-        ("Download",         lambda i: download_video(i, str(rows[i - 1]["download_url"]))),
-        ("Trim", lambda i: trim_video(i, float(str(rows[i - 1]["trim_start"])), float(str(rows[i - 1]["trim_duration"])))),
-        ("Normalize Audio",  normalize_audio),
+        ("Download",          lambda i: download_video(i, str(rows[i - 1]["download_url"])), None),
+        ("Trim",              lambda i: trim_video(i, float(str(rows[i - 1]["trim_start"])), float(str(rows[i - 1]["trim_duration"]))), DOWNLOADS_DIR),
+        ("Normalize Audio",   normalize_audio, TRIMMED_DIR),
         ("Generate Overlays", lambda i: generate_overlay(
             index=i,
             rank=i,
             anime_name=str(rows[i - 1]["anime_name"]),
             song_name=str(rows[i - 1]["song_name"]),
             scores=[float(rows[i - 1][str(r["score_column"])]) for r in REVIEWERS],
-        )),
-        ("Overlay Video",    overlay_video),
-        ("Fade",             fade_video),
+        ), None),
+        ("Overlay Video",     overlay_video, NORMALISED_DIR),
+        ("Fade",              fade_video, OVERLAYED_DIR),
     ]
 
-    for name, func in stages:
-        success, failed, elapsed = run_stage(name, indices, func)
+    for name, func, cleanup_dir in stages:
+        success, failed, elapsed = run_stage(name, indices, func, cleanup_dir)
         summary.append((name, success, failed, elapsed))
 
     # Concatenation

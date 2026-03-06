@@ -80,8 +80,8 @@ def trim_all() -> None:
     for i in range(len(df)):
         trim_video(
             index=i + 1,
-            trim_start=int(df['trim_start'].iloc[i]),
-            trim_duration=int(df['trim_duration'].iloc[i])
+            trim_start=float(df['trim_start'].iloc[i]),
+            trim_duration=float(df['trim_duration'].iloc[i])
         )
 
 
