@@ -6,6 +6,7 @@ from src.config import *
 from src.downloader import download_video
 from src.video import trim_video, normalize_audio, overlay_video, fade_video, concatenate_all
 from src.image import generate_overlay
+from src.analytics import generate_report
 import logging
 
 logger = logging.getLogger(__name__)
@@ -92,6 +93,9 @@ def main():
     print(f"  {'-'*44}")
     print(f"  {'Total':<22} {'':>4} {'':>4} {format_elapsed(total_elapsed):>10}")
     print(f"{'='*50}\n")
+
+    # Analytics
+    generate_report()
 
 
 if __name__ == "__main__":
