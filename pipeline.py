@@ -55,7 +55,7 @@ def main():
 
     stages = [
         ("Download",          lambda i: download_video(i, str(rows[i - 1]["download_url"])), None),
-        ("Trim",              lambda i: trim_video(i, float(str(rows[i - 1]["trim_start"])), float(str(rows[i - 1]["trim_duration"]))), DOWNLOADS_DIR),
+        ("Trim",              lambda i: trim_video(i, float(str(rows[i - 1]["trim_start"])), float(str(rows[i - 1]["trim_duration"]))), None),
         ("Normalize Audio",   normalize_audio, TRIMMED_DIR),
         ("Generate Overlays", lambda i: generate_overlay(
             index=i,

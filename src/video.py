@@ -6,6 +6,7 @@ import sys
 import pandas as pd
 
 from src.config import (
+    CONCAT_BATCH_SIZE,
     VAAPI_DEVICE,
     VIDEOS_CSV,
     TRIMMED_DIR,
@@ -341,7 +342,42 @@ def prompt_with_timeout(message: str, timeout: int, default: str) -> str:
     return default
 
 
-def concatenate_all() -> bool:
+def concat_batch(files: list, output_path, vaapi_device: list) -> bool:
+    inputs = []
+    filter_parts = []
+    for i, file in enumerate(files):
+        inputs += ["-i", str(file)]
+        filter_parts.append(f"[{i}:v][{i}:a]")
+
+    n = len(files)
+
+    if VIDEO_CODEC == "h264_vaapi":
+        filter_complex = "".join(filter_parts) + f"concat=n={n}:v=1:a=1[vraw][a];[vraw]format=nv12,hwupload[v]"
+        map_args = ["-map", "[v]", "-map", "[a]"]
+    else:
+        filter_complex = "".join(filter_parts) + f"concat=n={n}:v=1:a=1[v][a]"
+        map_args = ["-map", "[v]", "-map", "[a]"]
+
+    command = [
+        "ffmpeg", "-y",
+        *vaapi_device,
+        *inputs,
+        "-filter_complex", filter_complex,
+        *map_args,
+        "-c:v", VIDEO_CODEC,
+        "-c:a", "aac",
+        str(output_path)
+    ]
+
+    try:
+        subprocess.run(command, stdout=subprocess.DEVNULL, stderr=subprocess.PIPE, check=True)
+        return True
+    except subprocess.CalledProcessError as e:
+        logger.error(f"Batch concat failed: {e.stderr.decode()}")
+        return False
+
+
+def concatenate_all(batch_size: int = CONCAT_BATCH_SIZE) -> bool:
     df = pd.read_csv(VIDEOS_CSV, delimiter=";")
     message = (
         "\nConcatenation mode:\n"
@@ -367,51 +403,44 @@ def concatenate_all() -> bool:
                 logger.error(f"[{index}] No faded file found but download exists, aborting.")
                 return False
         faded_files.append(files[0])
-    
+
     faded_files.reverse()
 
     if not faded_files:
         logger.error("No faded files found at all, aborting.")
         return False
 
-    inputs = []
-    filter_parts = []
-    for i, file in enumerate(faded_files):
-        inputs += ["-i", str(file)]
-        filter_parts.append(f"[{i}:v][{i}:a]")
-
-    n = len(faded_files)
     vaapi_device = ["-vaapi_device", VAAPI_DEVICE] if VIDEO_CODEC == "h264_vaapi" else []
 
-    if VIDEO_CODEC == "h264_vaapi":
-        filter_complex = "".join(filter_parts) + f"concat=n={n}:v=1:a=1[vraw][a];[vraw]format=nv12,hwupload[v]"
-        map_args = ["-map", "[v]", "-map", "[a]"]
-    else:
-        filter_complex = "".join(filter_parts) + f"concat=n={n}:v=1:a=1[v][a]"
-        map_args = ["-map", "[v]", "-map", "[a]"]
+    # If small enough, concat directly
+    if len(faded_files) <= batch_size:
+        logger.info("Small enough for direct concatenation.")
+        return concat_batch(faded_files, FINAL_OUTPUT, vaapi_device)
 
-    command = [
-        "ffmpeg", "-y",
-        *vaapi_device,
-        *inputs,
-        "-filter_complex", filter_complex,
-        *map_args,
-        "-c:v", VIDEO_CODEC,
-        "-c:a", "aac",
-        str(FINAL_OUTPUT)
-    ]
+    # Split into batches
+    batches = [faded_files[i:i + batch_size] for i in range(0, len(faded_files), batch_size)]
+    batch_outputs = []
 
-    try:
-        subprocess.run(
-            command,
-            stdout=subprocess.DEVNULL,
-            stderr=subprocess.PIPE,
-            check=True
-        )
+    logger.info(f"Concatenating {len(faded_files)} files in {len(batches)} batches of {batch_size}.")
+
+    for i, batch in enumerate(batches):
+        batch_output = FINAL_DIR / f"batch_{i}.mp4"
+        batch_outputs.append(batch_output)
+        logger.info(f"Processing batch {i + 1}/{len(batches)}...")
+        if not concat_batch(batch, batch_output, vaapi_device):
+            logger.error(f"Batch {i + 1} failed, aborting.")
+            return False
+
+    # Concat the batches
+    logger.info("Merging batches into final output...")
+    result = concat_batch(batch_outputs, FINAL_OUTPUT, vaapi_device)
+
+    # Cleanup batch files
+    for batch_output in batch_outputs:
+        if batch_output.exists():
+            batch_output.unlink()
+
+    if result:
         logger.info("Concatenation complete. Final output: top.mp4")
-        return True
-
-    except subprocess.CalledProcessError as e:
-        logger.error(f"Concatenation failed: {e.stderr.decode()}")
-        return False
+    return result
 

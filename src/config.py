@@ -45,3 +45,5 @@ REVIEWERS = [
 ]
 
 BROWSER_COOKIES = "firefox:~/.zen/0uz1xbvm.Default (release)/"
+
+CONCAT_BATCH_SIZE = 100
