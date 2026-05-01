@@ -5640,3 +5640,797 @@ Error opening input files: Option not found
 2026-03-06 13:45:44,172 - src.video - WARNING - [60] No faded file found, skipping.
 2026-03-06 13:45:44,172 - src.video - WARNING - [63] No faded file found, skipping.
 2026-03-06 13:45:44,172 - src.video - INFO - Small enough for direct concatenation.
+2026-03-15 19:19:25,198 - src.downloader - INFO - [1] Already exists with same URL, skipping.
+2026-03-15 19:19:25,198 - src.downloader - INFO - [2] Already exists with same URL, skipping.
+2026-03-15 19:19:25,199 - src.downloader - INFO - [3] Already exists with same URL, skipping.
+2026-03-15 19:19:26,877 - src.downloader - ERROR - [4] Download failed: ERROR: [youtube] PiauQ7P7mtQ: Video unavailable. This video is no longer available due to a copyright claim by Sony Music Entertainment (Japan) Inc.
+2026-03-15 19:19:26,878 - src.downloader - INFO - [5] Already exists with same URL, skipping.
+2026-03-15 19:19:26,878 - src.downloader - INFO - [6] Already exists with same URL, skipping.
+2026-03-15 19:19:26,879 - src.downloader - INFO - [7] Already exists with same URL, skipping.
+2026-03-15 19:19:26,879 - src.downloader - INFO - [8] Already exists with same URL, skipping.
+2026-03-15 19:19:26,879 - src.downloader - INFO - [9] Already exists with same URL, skipping.
+2026-03-15 19:19:28,540 - src.downloader - ERROR - [10] Download failed: ERROR: [youtube] Tu-WyAn1zWg: Video unavailable. This video is private
+2026-03-15 19:19:28,541 - src.downloader - INFO - [11] Already exists with same URL, skipping.
+2026-03-15 19:19:28,541 - src.downloader - INFO - [12] Already exists with same URL, skipping.
+2026-03-15 19:19:30,219 - src.downloader - ERROR - [13] Download failed: ERROR: [youtube] XCz3QiLNyDI: Video unavailable. This video is no longer available because the YouTube account associated with this video has been terminated.
+2026-03-15 19:19:31,853 - src.downloader - ERROR - [14] Download failed: ERROR: [youtube] frfompwkApw: Video unavailable. This video is no longer available due to a copyright claim by Sony Music Entertainment (Japan) Inc.
+2026-03-15 19:19:31,854 - src.downloader - INFO - [15] Already exists with same URL, skipping.
+2026-03-15 19:19:31,854 - src.downloader - INFO - [16] Already exists with same URL, skipping.
+2026-03-15 19:19:33,470 - src.downloader - ERROR - [17] Download failed: ERROR: [youtube] Lfr_jr0z6jE: Video unavailable. This video is private
+2026-03-15 19:19:33,470 - src.downloader - INFO - [18] Already exists with same URL, skipping.
+2026-03-15 19:19:33,471 - src.downloader - INFO - [19] Already exists with same URL, skipping.
+2026-03-15 19:19:33,471 - src.downloader - INFO - [20] Already exists with same URL, skipping.
+2026-03-15 19:19:33,471 - src.downloader - INFO - [21] Already exists with same URL, skipping.
+2026-03-15 19:19:33,471 - src.downloader - INFO - [22] Already exists with same URL, skipping.
+2026-03-15 19:19:35,080 - src.downloader - ERROR - [23] Download failed: ERROR: [youtube] TJCZ3YRWxKg: Video unavailable
+2026-03-15 19:19:36,708 - src.downloader - ERROR - [24] Download failed: ERROR: [youtube] B7A9j2GT_5g: Video unavailable. This video is no longer available due to a copyright claim by TOKYO BROADCASTING SYSTEM, INC. の代理人弁護士(TBS's lawyer)
+2026-03-15 19:19:39,123 - src.downloader - ERROR - [25] Download failed: ERROR: [youtube] hZpTGk2nDOc: Video unavailable. This video is not available
+2026-03-15 19:19:41,407 - src.downloader - ERROR - [26] Download failed: ERROR: [youtube] qaLeO-2Fytg: Video unavailable. This video contains content from Aniplex Inc., who has blocked it on copyright grounds
+2026-03-15 19:19:41,407 - src.downloader - INFO - [27] Already exists with same URL, skipping.
+2026-03-15 19:19:43,060 - src.downloader - ERROR - [28] Download failed: ERROR: [youtube] VGT_mKDgtow: Video unavailable. This video is private
+2026-03-15 19:19:43,060 - src.downloader - INFO - [29] Already exists with same URL, skipping.
+2026-03-15 19:19:44,683 - src.downloader - ERROR - [30] Download failed: ERROR: [youtube] ZuI8Siwv-no: Video unavailable
+2026-03-15 19:19:44,683 - src.downloader - INFO - [31] Already exists with same URL, skipping.
+2026-03-15 19:19:44,684 - src.downloader - INFO - [32] Already exists with same URL, skipping.
+2026-03-15 19:19:44,684 - src.downloader - INFO - [33] Already exists with same URL, skipping.
+2026-03-15 19:19:44,684 - src.downloader - INFO - [34] Already exists with same URL, skipping.
+2026-03-15 19:19:44,684 - src.downloader - INFO - [35] Already exists with same URL, skipping.
+2026-03-15 19:19:44,685 - src.downloader - INFO - [36] Already exists with same URL, skipping.
+2026-03-15 19:19:46,355 - src.downloader - ERROR - [37] Download failed: ERROR: [youtube] kErJOepkDQk: Video unavailable. This video is no longer available due to a copyright claim by 株式会社バンダイナムコフィルムワークス
+2026-03-15 19:19:46,355 - src.downloader - INFO - [38] Already exists with same URL, skipping.
+2026-03-15 19:19:46,356 - src.downloader - INFO - [39] Already exists with same URL, skipping.
+2026-03-15 19:19:46,356 - src.downloader - INFO - [40] Already exists with same URL, skipping.
+2026-03-15 19:19:46,356 - src.downloader - INFO - [41] Already exists with same URL, skipping.
+2026-03-15 19:19:46,356 - src.downloader - INFO - [42] Already exists with same URL, skipping.
+2026-03-15 19:19:46,356 - src.downloader - INFO - [43] Already exists with same URL, skipping.
+2026-03-15 19:19:46,356 - src.downloader - INFO - [44] Already exists with same URL, skipping.
+2026-03-15 19:19:46,357 - src.downloader - INFO - [45] Already exists with same URL, skipping.
+2026-03-15 19:19:46,357 - src.downloader - INFO - [46] Already exists with same URL, skipping.
+2026-03-15 19:19:46,357 - src.downloader - INFO - [47] Already exists with same URL, skipping.
+2026-03-15 19:19:46,357 - src.downloader - INFO - [48] Already exists with same URL, skipping.
+2026-03-15 19:19:46,357 - src.downloader - INFO - [49] Already exists with same URL, skipping.
+2026-03-15 19:19:46,357 - src.downloader - INFO - [50] Already exists with same URL, skipping.
+2026-03-15 19:19:46,357 - src.downloader - INFO - [51] Already exists with same URL, skipping.
+2026-03-15 19:19:46,358 - src.downloader - INFO - [52] Already exists with same URL, skipping.
+2026-03-15 19:19:46,358 - src.downloader - INFO - [53] Already exists with same URL, skipping.
+2026-03-15 19:19:46,358 - src.downloader - INFO - [54] Already exists with same URL, skipping.
+2026-03-15 19:19:46,358 - src.downloader - INFO - [55] Already exists with same URL, skipping.
+2026-03-15 19:19:47,994 - src.downloader - ERROR - [56] Download failed: ERROR: [youtube] izIS1nzRqCc: Video unavailable. This video is private
+2026-03-15 19:19:50,472 - src.downloader - ERROR - [57] Download failed: ERROR: [youtube] R3shsgKbd_M: Video unavailable. This video contains content from KADOKAWA CORPORATION, who has blocked it on copyright grounds
+2026-03-15 19:19:52,590 - src.downloader - ERROR - [58] Download failed: ERROR: [youtube] ey0T9h1Ibng: Video unavailable. This video contains content from KADOKAWA CORPORATION, who has blocked it on copyright grounds
+2026-03-15 19:19:52,590 - src.downloader - INFO - [59] Already exists with same URL, skipping.
+2026-03-15 19:19:54,324 - src.downloader - ERROR - [60] Download failed: ERROR: [youtube] Fc-XPJE3oeM: Video unavailable. This video is no longer available because the YouTube account associated with this video has been terminated.
+2026-03-15 19:19:54,325 - src.downloader - INFO - [61] Already exists with same URL, skipping.
+2026-03-15 19:19:54,325 - src.downloader - INFO - [62] Already exists with same URL, skipping.
+2026-03-15 19:19:56,884 - src.downloader - ERROR - [63] Download failed: ERROR: [youtube] xkH8ti1gakE: Video unavailable. This video contains content from SME, who has blocked it in your country on copyright grounds
+2026-03-15 19:19:59,204 - src.video - INFO - [1] Trimmed successfully.
+2026-03-15 19:20:07,992 - src.video - INFO - [2] Trimmed successfully.
+2026-03-15 19:20:10,448 - src.video - INFO - [3] Trimmed successfully.
+2026-03-15 19:20:10,448 - src.video - ERROR - [4] No downloaded file found, skipping trim.
+2026-03-15 19:20:15,865 - src.video - INFO - [5] Trimmed successfully.
+2026-03-15 19:20:18,274 - src.video - INFO - [6] Trimmed successfully.
+2026-03-15 19:20:20,610 - src.video - INFO - [7] Trimmed successfully.
+2026-03-15 19:20:23,012 - src.video - INFO - [8] Trimmed successfully.
+2026-03-15 19:20:25,379 - src.video - INFO - [9] Trimmed successfully.
+2026-03-15 19:20:25,379 - src.video - ERROR - [10] No downloaded file found, skipping trim.
+2026-03-15 19:20:27,755 - src.video - INFO - [11] Trimmed successfully.
+2026-03-15 19:20:30,149 - src.video - INFO - [12] Trimmed successfully.
+2026-03-15 19:20:30,149 - src.video - ERROR - [13] No downloaded file found, skipping trim.
+2026-03-15 19:20:30,149 - src.video - ERROR - [14] No downloaded file found, skipping trim.
+2026-03-15 19:20:32,540 - src.video - INFO - [15] Trimmed successfully.
+2026-03-15 19:20:36,179 - src.video - INFO - [16] Trimmed successfully.
+2026-03-15 19:20:36,179 - src.video - ERROR - [17] No downloaded file found, skipping trim.
+2026-03-15 19:20:38,565 - src.video - INFO - [18] Trimmed successfully.
+2026-03-15 19:20:41,052 - src.video - INFO - [19] Trimmed successfully.
+2026-03-15 19:20:43,475 - src.video - INFO - [20] Trimmed successfully.
+2026-03-15 19:20:45,789 - src.video - INFO - [21] Trimmed successfully.
+2026-03-15 19:20:56,002 - src.video - INFO - [22] Trimmed successfully.
+2026-03-15 19:20:56,002 - src.video - ERROR - [23] No downloaded file found, skipping trim.
+2026-03-15 19:20:56,002 - src.video - ERROR - [24] No downloaded file found, skipping trim.
+2026-03-15 19:20:56,003 - src.video - ERROR - [25] No downloaded file found, skipping trim.
+2026-03-15 19:20:56,003 - src.video - ERROR - [26] No downloaded file found, skipping trim.
+2026-03-15 19:20:58,463 - src.video - INFO - [27] Trimmed successfully.
+2026-03-15 19:20:58,463 - src.video - ERROR - [28] No downloaded file found, skipping trim.
+2026-03-15 19:21:00,853 - src.video - INFO - [29] Trimmed successfully.
+2026-03-15 19:21:00,854 - src.video - ERROR - [30] No downloaded file found, skipping trim.
+2026-03-15 19:21:03,280 - src.video - INFO - [31] Trimmed successfully.
+2026-03-15 19:21:05,697 - src.video - INFO - [32] Trimmed successfully.
+2026-03-15 19:21:08,233 - src.video - INFO - [33] Trimmed successfully.
+2026-03-15 19:21:10,609 - src.video - INFO - [34] Trimmed successfully.
+2026-03-15 19:21:12,981 - src.video - INFO - [35] Trimmed successfully.
+2026-03-15 19:21:15,319 - src.video - INFO - [36] Trimmed successfully.
+2026-03-15 19:21:15,319 - src.video - ERROR - [37] No downloaded file found, skipping trim.
+2026-03-15 19:21:17,699 - src.video - INFO - [38] Trimmed successfully.
+2026-03-15 19:21:20,033 - src.video - INFO - [39] Trimmed successfully.
+2026-03-15 19:21:22,370 - src.video - INFO - [40] Trimmed successfully.
+2026-03-15 19:21:24,801 - src.video - INFO - [41] Trimmed successfully.
+2026-03-15 19:21:27,127 - src.video - INFO - [42] Trimmed successfully.
+2026-03-15 19:21:36,552 - src.video - INFO - [43] Trimmed successfully.
+2026-03-15 19:21:38,954 - src.video - INFO - [44] Trimmed successfully.
+2026-03-15 19:21:41,532 - src.video - INFO - [45] Trimmed successfully.
+2026-03-15 19:21:48,262 - src.video - INFO - [46] Trimmed successfully.
+2026-03-15 19:21:50,728 - src.video - INFO - [47] Trimmed successfully.
+2026-03-15 19:21:53,140 - src.video - INFO - [48] Trimmed successfully.
+2026-03-15 19:21:55,480 - src.video - INFO - [49] Trimmed successfully.
+2026-03-15 19:21:57,883 - src.video - INFO - [50] Trimmed successfully.
+2026-03-15 19:22:00,245 - src.video - INFO - [51] Trimmed successfully.
+2026-03-15 19:22:02,675 - src.video - INFO - [52] Trimmed successfully.
+2026-03-15 19:22:04,996 - src.video - INFO - [53] Trimmed successfully.
+2026-03-15 19:22:07,523 - src.video - INFO - [54] Trimmed successfully.
+2026-03-15 19:22:09,878 - src.video - INFO - [55] Trimmed successfully.
+2026-03-15 19:22:09,879 - src.video - ERROR - [56] No downloaded file found, skipping trim.
+2026-03-15 19:22:09,879 - src.video - ERROR - [57] No downloaded file found, skipping trim.
+2026-03-15 19:22:09,879 - src.video - ERROR - [58] No downloaded file found, skipping trim.
+2026-03-15 19:22:12,219 - src.video - INFO - [59] Trimmed successfully.
+2026-03-15 19:22:12,219 - src.video - ERROR - [60] No downloaded file found, skipping trim.
+2026-03-15 19:22:14,709 - src.video - INFO - [61] Trimmed successfully.
+2026-03-15 19:22:17,176 - src.video - INFO - [62] Trimmed successfully.
+2026-03-15 19:22:17,176 - src.video - ERROR - [63] No downloaded file found, skipping trim.
+2026-03-15 19:22:18,130 - src.video - INFO - [1] Normalised successfully.
+2026-03-15 19:22:19,050 - src.video - INFO - [2] Normalised successfully.
+2026-03-15 19:22:19,885 - src.video - INFO - [3] Normalised successfully.
+2026-03-15 19:22:19,887 - src.video - ERROR - [4] No trimmed file found, skipping normalize.
+2026-03-15 19:22:20,892 - src.video - INFO - [5] Normalised successfully.
+2026-03-15 19:22:21,883 - src.video - INFO - [6] Normalised successfully.
+2026-03-15 19:22:22,837 - src.video - INFO - [7] Normalised successfully.
+2026-03-15 19:22:23,697 - src.video - INFO - [8] Normalised successfully.
+2026-03-15 19:22:24,554 - src.video - INFO - [9] Normalised successfully.
+2026-03-15 19:22:24,556 - src.video - ERROR - [10] No trimmed file found, skipping normalize.
+2026-03-15 19:22:25,522 - src.video - INFO - [11] Normalised successfully.
+2026-03-15 19:22:26,463 - src.video - INFO - [12] Normalised successfully.
+2026-03-15 19:22:26,464 - src.video - ERROR - [13] No trimmed file found, skipping normalize.
+2026-03-15 19:22:26,464 - src.video - ERROR - [14] No trimmed file found, skipping normalize.
+2026-03-15 19:22:27,368 - src.video - INFO - [15] Normalised successfully.
+2026-03-15 19:22:28,257 - src.video - INFO - [16] Normalised successfully.
+2026-03-15 19:22:28,260 - src.video - ERROR - [17] No trimmed file found, skipping normalize.
+2026-03-15 19:22:29,245 - src.video - INFO - [18] Normalised successfully.
+2026-03-15 19:22:30,285 - src.video - INFO - [19] Normalised successfully.
+2026-03-15 19:22:31,316 - src.video - INFO - [20] Normalised successfully.
+2026-03-15 19:22:32,167 - src.video - INFO - [21] Normalised successfully.
+2026-03-15 19:22:33,089 - src.video - INFO - [22] Normalised successfully.
+2026-03-15 19:22:33,092 - src.video - ERROR - [23] No trimmed file found, skipping normalize.
+2026-03-15 19:22:33,092 - src.video - ERROR - [24] No trimmed file found, skipping normalize.
+2026-03-15 19:22:33,092 - src.video - ERROR - [25] No trimmed file found, skipping normalize.
+2026-03-15 19:22:33,092 - src.video - ERROR - [26] No trimmed file found, skipping normalize.
+2026-03-15 19:22:33,990 - src.video - INFO - [27] Normalised successfully.
+2026-03-15 19:22:33,991 - src.video - ERROR - [28] No trimmed file found, skipping normalize.
+2026-03-15 19:22:34,991 - src.video - INFO - [29] Normalised successfully.
+2026-03-15 19:22:34,994 - src.video - ERROR - [30] No trimmed file found, skipping normalize.
+2026-03-15 19:22:35,911 - src.video - INFO - [31] Normalised successfully.
+2026-03-15 19:22:36,860 - src.video - INFO - [32] Normalised successfully.
+2026-03-15 19:22:37,810 - src.video - INFO - [33] Normalised successfully.
+2026-03-15 19:22:38,746 - src.video - INFO - [34] Normalised successfully.
+2026-03-15 19:22:39,719 - src.video - INFO - [35] Normalised successfully.
+2026-03-15 19:22:40,672 - src.video - INFO - [36] Normalised successfully.
+2026-03-15 19:22:40,674 - src.video - ERROR - [37] No trimmed file found, skipping normalize.
+2026-03-15 19:22:41,648 - src.video - INFO - [38] Normalised successfully.
+2026-03-15 19:22:42,631 - src.video - INFO - [39] Normalised successfully.
+2026-03-15 19:22:43,620 - src.video - INFO - [40] Normalised successfully.
+2026-03-15 19:22:44,540 - src.video - INFO - [41] Normalised successfully.
+2026-03-15 19:22:45,426 - src.video - INFO - [42] Normalised successfully.
+2026-03-15 19:22:46,385 - src.video - INFO - [43] Normalised successfully.
+2026-03-15 19:22:47,443 - src.video - INFO - [44] Normalised successfully.
+2026-03-15 19:22:48,405 - src.video - INFO - [45] Normalised successfully.
+2026-03-15 19:22:49,320 - src.video - INFO - [46] Normalised successfully.
+2026-03-15 19:22:50,484 - src.video - INFO - [47] Normalised successfully.
+2026-03-15 19:22:51,449 - src.video - INFO - [48] Normalised successfully.
+2026-03-15 19:22:52,508 - src.video - INFO - [49] Normalised successfully.
+2026-03-15 19:22:53,567 - src.video - INFO - [50] Normalised successfully.
+2026-03-15 19:22:54,462 - src.video - INFO - [51] Normalised successfully.
+2026-03-15 19:22:55,465 - src.video - INFO - [52] Normalised successfully.
+2026-03-15 19:22:56,465 - src.video - INFO - [53] Normalised successfully.
+2026-03-15 19:22:57,458 - src.video - INFO - [54] Normalised successfully.
+2026-03-15 19:22:58,338 - src.video - INFO - [55] Normalised successfully.
+2026-03-15 19:22:58,340 - src.video - ERROR - [56] No trimmed file found, skipping normalize.
+2026-03-15 19:22:58,340 - src.video - ERROR - [57] No trimmed file found, skipping normalize.
+2026-03-15 19:22:58,340 - src.video - ERROR - [58] No trimmed file found, skipping normalize.
+2026-03-15 19:22:59,220 - src.video - INFO - [59] Normalised successfully.
+2026-03-15 19:22:59,222 - src.video - ERROR - [60] No trimmed file found, skipping normalize.
+2026-03-15 19:23:00,107 - src.video - INFO - [61] Normalised successfully.
+2026-03-15 19:23:01,133 - src.video - INFO - [62] Normalised successfully.
+2026-03-15 19:23:01,135 - src.video - ERROR - [63] No trimmed file found, skipping normalize.
+2026-03-15 19:23:01,172 - src.image - INFO - [1] Overlay generated.
+2026-03-15 19:23:01,193 - src.image - INFO - [2] Overlay generated.
+2026-03-15 19:23:01,213 - src.image - INFO - [3] Overlay generated.
+2026-03-15 19:23:01,234 - src.image - INFO - [4] Overlay generated.
+2026-03-15 19:23:01,254 - src.image - INFO - [5] Overlay generated.
+2026-03-15 19:23:01,272 - src.image - INFO - [6] Overlay generated.
+2026-03-15 19:23:01,292 - src.image - INFO - [7] Overlay generated.
+2026-03-15 19:23:01,312 - src.image - INFO - [8] Overlay generated.
+2026-03-15 19:23:01,331 - src.image - INFO - [9] Overlay generated.
+2026-03-15 19:23:01,351 - src.image - INFO - [10] Overlay generated.
+2026-03-15 19:23:01,370 - src.image - INFO - [11] Overlay generated.
+2026-03-15 19:23:01,390 - src.image - INFO - [12] Overlay generated.
+2026-03-15 19:23:01,411 - src.image - INFO - [13] Overlay generated.
+2026-03-15 19:23:01,431 - src.image - INFO - [14] Overlay generated.
+2026-03-15 19:23:01,452 - src.image - INFO - [15] Overlay generated.
+2026-03-15 19:23:01,478 - src.image - INFO - [16] Overlay generated.
+2026-03-15 19:23:01,497 - src.image - INFO - [17] Overlay generated.
+2026-03-15 19:23:01,516 - src.image - INFO - [18] Overlay generated.
+2026-03-15 19:23:01,535 - src.image - INFO - [19] Overlay generated.
+2026-03-15 19:23:01,554 - src.image - INFO - [20] Overlay generated.
+2026-03-15 19:23:01,572 - src.image - INFO - [21] Overlay generated.
+2026-03-15 19:23:01,591 - src.image - INFO - [22] Overlay generated.
+2026-03-15 19:23:01,611 - src.image - INFO - [23] Overlay generated.
+2026-03-15 19:23:01,631 - src.image - INFO - [24] Overlay generated.
+2026-03-15 19:23:01,650 - src.image - INFO - [25] Overlay generated.
+2026-03-15 19:23:01,669 - src.image - INFO - [26] Overlay generated.
+2026-03-15 19:23:01,690 - src.image - INFO - [27] Overlay generated.
+2026-03-15 19:23:01,709 - src.image - INFO - [28] Overlay generated.
+2026-03-15 19:23:01,729 - src.image - INFO - [29] Overlay generated.
+2026-03-15 19:23:01,753 - src.image - INFO - [30] Overlay generated.
+2026-03-15 19:23:01,773 - src.image - INFO - [31] Overlay generated.
+2026-03-15 19:23:01,792 - src.image - INFO - [32] Overlay generated.
+2026-03-15 19:23:01,812 - src.image - INFO - [33] Overlay generated.
+2026-03-15 19:23:01,831 - src.image - INFO - [34] Overlay generated.
+2026-03-15 19:23:01,850 - src.image - INFO - [35] Overlay generated.
+2026-03-15 19:23:01,869 - src.image - INFO - [36] Overlay generated.
+2026-03-15 19:23:01,891 - src.image - INFO - [37] Overlay generated.
+2026-03-15 19:23:01,912 - src.image - INFO - [38] Overlay generated.
+2026-03-15 19:23:01,932 - src.image - INFO - [39] Overlay generated.
+2026-03-15 19:23:01,951 - src.image - INFO - [40] Overlay generated.
+2026-03-15 19:23:01,970 - src.image - INFO - [41] Overlay generated.
+2026-03-15 19:23:01,988 - src.image - INFO - [42] Overlay generated.
+2026-03-15 19:23:02,008 - src.image - INFO - [43] Overlay generated.
+2026-03-15 19:23:02,027 - src.image - INFO - [44] Overlay generated.
+2026-03-15 19:23:02,047 - src.image - INFO - [45] Overlay generated.
+2026-03-15 19:23:02,066 - src.image - INFO - [46] Overlay generated.
+2026-03-15 19:23:02,086 - src.image - INFO - [47] Overlay generated.
+2026-03-15 19:23:02,105 - src.image - INFO - [48] Overlay generated.
+2026-03-15 19:23:02,124 - src.image - INFO - [49] Overlay generated.
+2026-03-15 19:23:02,144 - src.image - INFO - [50] Overlay generated.
+2026-03-15 19:23:02,164 - src.image - INFO - [51] Overlay generated.
+2026-03-15 19:23:02,183 - src.image - INFO - [52] Overlay generated.
+2026-03-15 19:23:02,203 - src.image - INFO - [53] Overlay generated.
+2026-03-15 19:23:02,223 - src.image - INFO - [54] Overlay generated.
+2026-03-15 19:23:02,250 - src.image - INFO - [55] Overlay generated.
+2026-03-15 19:23:02,270 - src.image - INFO - [56] Overlay generated.
+2026-03-15 19:23:02,290 - src.image - INFO - [57] Overlay generated.
+2026-03-15 19:23:02,309 - src.image - INFO - [58] Overlay generated.
+2026-03-15 19:23:02,328 - src.image - INFO - [59] Overlay generated.
+2026-03-15 19:23:02,350 - src.image - INFO - [60] Overlay generated.
+2026-03-15 19:23:02,369 - src.image - INFO - [61] Overlay generated.
+2026-03-15 19:23:02,389 - src.image - INFO - [62] Overlay generated.
+2026-03-15 19:23:02,409 - src.image - INFO - [63] Overlay generated.
+2026-03-15 19:23:04,825 - src.video - INFO - [1] Overlay applied successfully.
+2026-03-15 19:23:07,262 - src.video - INFO - [2] Overlay applied successfully.
+2026-03-15 19:23:09,720 - src.video - INFO - [3] Overlay applied successfully.
+2026-03-15 19:23:09,723 - src.video - ERROR - [4] No normalised file found, skipping overlay.
+2026-03-15 19:23:12,152 - src.video - INFO - [5] Overlay applied successfully.
+2026-03-15 19:23:14,538 - src.video - INFO - [6] Overlay applied successfully.
+2026-03-15 19:23:16,929 - src.video - INFO - [7] Overlay applied successfully.
+2026-03-15 19:23:19,346 - src.video - INFO - [8] Overlay applied successfully.
+2026-03-15 19:23:21,770 - src.video - INFO - [9] Overlay applied successfully.
+2026-03-15 19:23:21,772 - src.video - ERROR - [10] No normalised file found, skipping overlay.
+2026-03-15 19:23:24,188 - src.video - INFO - [11] Overlay applied successfully.
+2026-03-15 19:23:26,582 - src.video - INFO - [12] Overlay applied successfully.
+2026-03-15 19:23:26,583 - src.video - ERROR - [13] No normalised file found, skipping overlay.
+2026-03-15 19:23:26,583 - src.video - ERROR - [14] No normalised file found, skipping overlay.
+2026-03-15 19:23:28,972 - src.video - INFO - [15] Overlay applied successfully.
+2026-03-15 19:23:31,375 - src.video - INFO - [16] Overlay applied successfully.
+2026-03-15 19:23:31,377 - src.video - ERROR - [17] No normalised file found, skipping overlay.
+2026-03-15 19:23:33,790 - src.video - INFO - [18] Overlay applied successfully.
+2026-03-15 19:23:36,240 - src.video - INFO - [19] Overlay applied successfully.
+2026-03-15 19:23:38,687 - src.video - INFO - [20] Overlay applied successfully.
+2026-03-15 19:23:41,118 - src.video - INFO - [21] Overlay applied successfully.
+2026-03-15 19:23:43,516 - src.video - INFO - [22] Overlay applied successfully.
+2026-03-15 19:23:43,519 - src.video - ERROR - [23] No normalised file found, skipping overlay.
+2026-03-15 19:23:43,519 - src.video - ERROR - [24] No normalised file found, skipping overlay.
+2026-03-15 19:23:43,519 - src.video - ERROR - [25] No normalised file found, skipping overlay.
+2026-03-15 19:23:43,519 - src.video - ERROR - [26] No normalised file found, skipping overlay.
+2026-03-15 19:23:45,920 - src.video - INFO - [27] Overlay applied successfully.
+2026-03-15 19:23:45,921 - src.video - ERROR - [28] No normalised file found, skipping overlay.
+2026-03-15 19:23:48,317 - src.video - INFO - [29] Overlay applied successfully.
+2026-03-15 19:23:48,319 - src.video - ERROR - [30] No normalised file found, skipping overlay.
+2026-03-15 19:23:50,716 - src.video - INFO - [31] Overlay applied successfully.
+2026-03-15 19:23:53,093 - src.video - INFO - [32] Overlay applied successfully.
+2026-03-15 19:23:55,507 - src.video - INFO - [33] Overlay applied successfully.
+2026-03-15 19:23:57,954 - src.video - INFO - [34] Overlay applied successfully.
+2026-03-15 19:24:00,390 - src.video - INFO - [35] Overlay applied successfully.
+2026-03-15 19:24:02,873 - src.video - INFO - [36] Overlay applied successfully.
+2026-03-15 19:24:02,874 - src.video - ERROR - [37] No normalised file found, skipping overlay.
+2026-03-15 19:24:05,314 - src.video - INFO - [38] Overlay applied successfully.
+2026-03-15 19:24:07,771 - src.video - INFO - [39] Overlay applied successfully.
+2026-03-15 19:24:10,225 - src.video - INFO - [40] Overlay applied successfully.
+2026-03-15 19:24:12,652 - src.video - INFO - [41] Overlay applied successfully.
+2026-03-15 19:24:15,079 - src.video - INFO - [42] Overlay applied successfully.
+2026-03-15 19:24:17,521 - src.video - INFO - [43] Overlay applied successfully.
+2026-03-15 19:24:19,946 - src.video - INFO - [44] Overlay applied successfully.
+2026-03-15 19:24:22,401 - src.video - INFO - [45] Overlay applied successfully.
+2026-03-15 19:24:24,795 - src.video - INFO - [46] Overlay applied successfully.
+2026-03-15 19:24:27,223 - src.video - INFO - [47] Overlay applied successfully.
+2026-03-15 19:24:29,621 - src.video - INFO - [48] Overlay applied successfully.
+2026-03-15 19:24:31,991 - src.video - INFO - [49] Overlay applied successfully.
+2026-03-15 19:24:34,366 - src.video - INFO - [50] Overlay applied successfully.
+2026-03-15 19:24:36,773 - src.video - INFO - [51] Overlay applied successfully.
+2026-03-15 19:24:39,168 - src.video - INFO - [52] Overlay applied successfully.
+2026-03-15 19:24:41,560 - src.video - INFO - [53] Overlay applied successfully.
+2026-03-15 19:24:43,983 - src.video - INFO - [54] Overlay applied successfully.
+2026-03-15 19:24:46,358 - src.video - INFO - [55] Overlay applied successfully.
+2026-03-15 19:24:46,359 - src.video - ERROR - [56] No normalised file found, skipping overlay.
+2026-03-15 19:24:46,360 - src.video - ERROR - [57] No normalised file found, skipping overlay.
+2026-03-15 19:24:46,360 - src.video - ERROR - [58] No normalised file found, skipping overlay.
+2026-03-15 19:24:48,744 - src.video - INFO - [59] Overlay applied successfully.
+2026-03-15 19:24:48,746 - src.video - ERROR - [60] No normalised file found, skipping overlay.
+2026-03-15 19:24:51,135 - src.video - INFO - [61] Overlay applied successfully.
+2026-03-15 19:24:53,524 - src.video - INFO - [62] Overlay applied successfully.
+2026-03-15 19:24:53,526 - src.video - ERROR - [63] No normalised file found, skipping overlay.
+2026-03-15 19:24:55,923 - src.video - INFO - [1] Faded successfully.
+2026-03-15 19:24:58,356 - src.video - INFO - [2] Faded successfully.
+2026-03-15 19:25:00,778 - src.video - INFO - [3] Faded successfully.
+2026-03-15 19:25:00,780 - src.video - ERROR - [4] No overlayed file found, skipping fade.
+2026-03-15 19:25:03,181 - src.video - INFO - [5] Faded successfully.
+2026-03-15 19:25:05,617 - src.video - INFO - [6] Faded successfully.
+2026-03-15 19:25:08,038 - src.video - INFO - [7] Faded successfully.
+2026-03-15 19:25:10,431 - src.video - INFO - [8] Faded successfully.
+2026-03-15 19:25:12,849 - src.video - INFO - [9] Faded successfully.
+2026-03-15 19:25:12,850 - src.video - ERROR - [10] No overlayed file found, skipping fade.
+2026-03-15 19:25:15,252 - src.video - INFO - [11] Faded successfully.
+2026-03-15 19:25:17,650 - src.video - INFO - [12] Faded successfully.
+2026-03-15 19:25:17,651 - src.video - ERROR - [13] No overlayed file found, skipping fade.
+2026-03-15 19:25:17,651 - src.video - ERROR - [14] No overlayed file found, skipping fade.
+2026-03-15 19:25:20,063 - src.video - INFO - [15] Faded successfully.
+2026-03-15 19:25:22,481 - src.video - INFO - [16] Faded successfully.
+2026-03-15 19:25:22,483 - src.video - ERROR - [17] No overlayed file found, skipping fade.
+2026-03-15 19:25:24,887 - src.video - INFO - [18] Faded successfully.
+2026-03-15 19:25:27,312 - src.video - INFO - [19] Faded successfully.
+2026-03-15 19:25:29,729 - src.video - INFO - [20] Faded successfully.
+2026-03-15 19:25:32,123 - src.video - INFO - [21] Faded successfully.
+2026-03-15 19:25:34,538 - src.video - INFO - [22] Faded successfully.
+2026-03-15 19:25:34,541 - src.video - ERROR - [23] No overlayed file found, skipping fade.
+2026-03-15 19:25:34,541 - src.video - ERROR - [24] No overlayed file found, skipping fade.
+2026-03-15 19:25:34,541 - src.video - ERROR - [25] No overlayed file found, skipping fade.
+2026-03-15 19:25:34,541 - src.video - ERROR - [26] No overlayed file found, skipping fade.
+2026-03-15 19:25:36,933 - src.video - INFO - [27] Faded successfully.
+2026-03-15 19:25:36,934 - src.video - ERROR - [28] No overlayed file found, skipping fade.
+2026-03-15 19:25:39,338 - src.video - INFO - [29] Faded successfully.
+2026-03-15 19:25:39,340 - src.video - ERROR - [30] No overlayed file found, skipping fade.
+2026-03-15 19:25:41,751 - src.video - INFO - [31] Faded successfully.
+2026-03-15 19:25:44,148 - src.video - INFO - [32] Faded successfully.
+2026-03-15 19:25:46,545 - src.video - INFO - [33] Faded successfully.
+2026-03-15 19:25:48,958 - src.video - INFO - [34] Faded successfully.
+2026-03-15 19:25:51,359 - src.video - INFO - [35] Faded successfully.
+2026-03-15 19:25:53,776 - src.video - INFO - [36] Faded successfully.
+2026-03-15 19:25:53,777 - src.video - ERROR - [37] No overlayed file found, skipping fade.
+2026-03-15 19:25:56,186 - src.video - INFO - [38] Faded successfully.
+2026-03-15 19:25:58,581 - src.video - INFO - [39] Faded successfully.
+2026-03-15 19:26:00,986 - src.video - INFO - [40] Faded successfully.
+2026-03-15 19:26:03,392 - src.video - INFO - [41] Faded successfully.
+2026-03-15 19:26:05,798 - src.video - INFO - [42] Faded successfully.
+2026-03-15 19:26:08,222 - src.video - INFO - [43] Faded successfully.
+2026-03-15 19:26:10,623 - src.video - INFO - [44] Faded successfully.
+2026-03-15 19:26:13,082 - src.video - INFO - [45] Faded successfully.
+2026-03-15 19:26:15,497 - src.video - INFO - [46] Faded successfully.
+2026-03-15 19:26:17,906 - src.video - INFO - [47] Faded successfully.
+2026-03-15 19:26:20,326 - src.video - INFO - [48] Faded successfully.
+2026-03-15 19:26:22,788 - src.video - INFO - [49] Faded successfully.
+2026-03-15 19:26:25,245 - src.video - INFO - [50] Faded successfully.
+2026-03-15 19:26:27,694 - src.video - INFO - [51] Faded successfully.
+2026-03-15 19:26:30,104 - src.video - INFO - [52] Faded successfully.
+2026-03-15 19:26:32,507 - src.video - INFO - [53] Faded successfully.
+2026-03-15 19:26:34,917 - src.video - INFO - [54] Faded successfully.
+2026-03-15 19:26:37,330 - src.video - INFO - [55] Faded successfully.
+2026-03-15 19:26:37,332 - src.video - ERROR - [56] No overlayed file found, skipping fade.
+2026-03-15 19:26:37,332 - src.video - ERROR - [57] No overlayed file found, skipping fade.
+2026-03-15 19:26:37,332 - src.video - ERROR - [58] No overlayed file found, skipping fade.
+2026-03-15 19:26:39,737 - src.video - INFO - [59] Faded successfully.
+2026-03-15 19:26:39,739 - src.video - ERROR - [60] No overlayed file found, skipping fade.
+2026-03-15 19:26:42,136 - src.video - INFO - [61] Faded successfully.
+2026-03-15 19:26:44,566 - src.video - INFO - [62] Faded successfully.
+2026-03-15 19:26:44,568 - src.video - ERROR - [63] No overlayed file found, skipping fade.
+2026-03-15 19:27:00,282 - src.video - INFO - [4] No download found, skipping.
+2026-03-15 19:27:00,282 - src.video - INFO - [10] No download found, skipping.
+2026-03-15 19:27:00,282 - src.video - INFO - [13] No download found, skipping.
+2026-03-15 19:27:00,282 - src.video - INFO - [14] No download found, skipping.
+2026-03-15 19:27:00,283 - src.video - INFO - [17] No download found, skipping.
+2026-03-15 19:27:00,283 - src.video - INFO - [23] No download found, skipping.
+2026-03-15 19:27:00,283 - src.video - INFO - [24] No download found, skipping.
+2026-03-15 19:27:00,283 - src.video - INFO - [25] No download found, skipping.
+2026-03-15 19:27:00,283 - src.video - INFO - [26] No download found, skipping.
+2026-03-15 19:27:00,283 - src.video - INFO - [28] No download found, skipping.
+2026-03-15 19:27:00,283 - src.video - INFO - [30] No download found, skipping.
+2026-03-15 19:27:00,283 - src.video - INFO - [37] No download found, skipping.
+2026-03-15 19:27:00,284 - src.video - INFO - [56] No download found, skipping.
+2026-03-15 19:27:00,284 - src.video - INFO - [57] No download found, skipping.
+2026-03-15 19:27:00,284 - src.video - INFO - [58] No download found, skipping.
+2026-03-15 19:27:00,284 - src.video - INFO - [60] No download found, skipping.
+2026-03-15 19:27:00,284 - src.video - INFO - [63] No download found, skipping.
+2026-03-15 19:27:00,284 - src.video - INFO - Small enough for direct concatenation.
+2026-03-15 19:28:43,224 - src.analytics - INFO - HTML report saved to /home/richter/shed/projects/top_video_project/output/report.html
+2026-03-23 16:46:05,069 - src.downloader - INFO - [1] Downloaded successfully.
+2026-03-23 16:46:24,941 - src.downloader - INFO - [2] Downloaded successfully.
+2026-03-23 16:46:37,654 - src.downloader - INFO - [3] Downloaded successfully.
+2026-03-23 16:46:39,318 - src.downloader - ERROR - [4] Download failed: ERROR: [youtube] PiauQ7P7mtQ: Video unavailable. This video is no longer available due to a copyright claim by Sony Music Entertainment (Japan) Inc.
+2026-03-23 16:47:12,099 - src.downloader - INFO - [5] Downloaded successfully.
+2026-03-23 16:47:26,235 - src.downloader - INFO - [6] Downloaded successfully.
+2026-03-23 16:47:40,922 - src.downloader - INFO - [7] Downloaded successfully.
+2026-03-23 16:47:52,017 - src.downloader - INFO - [8] Downloaded successfully.
+2026-03-23 16:48:04,771 - src.downloader - INFO - [9] Downloaded successfully.
+2026-03-23 16:48:06,467 - src.downloader - ERROR - [10] Download failed: ERROR: [youtube] Tu-WyAn1zWg: Video unavailable. This video is private
+2026-03-23 16:48:24,297 - src.downloader - INFO - [11] Downloaded successfully.
+2026-03-23 16:48:35,757 - src.downloader - INFO - [12] Downloaded successfully.
+2026-03-23 16:48:37,396 - src.downloader - ERROR - [13] Download failed: ERROR: [youtube] XCz3QiLNyDI: Video unavailable. This video is no longer available because the YouTube account associated with this video has been terminated.
+2026-03-23 16:48:39,060 - src.downloader - ERROR - [14] Download failed: ERROR: [youtube] frfompwkApw: Video unavailable. This video is no longer available due to a copyright claim by Sony Music Entertainment (Japan) Inc.
+2026-03-23 16:48:51,564 - src.downloader - INFO - [15] Downloaded successfully.
+2026-03-23 16:49:05,025 - src.downloader - INFO - [16] Downloaded successfully.
+2026-03-23 16:49:06,700 - src.downloader - ERROR - [17] Download failed: ERROR: [youtube] Lfr_jr0z6jE: Video unavailable. This video is private
+2026-03-23 16:49:18,581 - src.downloader - INFO - [18] Downloaded successfully.
+2026-03-23 16:49:38,006 - src.downloader - INFO - [19] Downloaded successfully.
+2026-03-23 16:49:50,115 - src.downloader - INFO - [20] Downloaded successfully.
+2026-03-23 16:50:02,011 - src.downloader - INFO - [21] Downloaded successfully.
+2026-03-23 16:50:24,855 - src.downloader - INFO - [22] Downloaded successfully.
+2026-03-23 16:50:26,522 - src.downloader - ERROR - [23] Download failed: ERROR: [youtube] TJCZ3YRWxKg: Video unavailable
+2026-03-23 16:50:28,183 - src.downloader - ERROR - [24] Download failed: ERROR: [youtube] B7A9j2GT_5g: Video unavailable. This video is no longer available due to a copyright claim by TOKYO BROADCASTING SYSTEM, INC. の代理人弁護士(TBS's lawyer)
+2026-03-23 16:50:30,297 - src.downloader - ERROR - [25] Download failed: ERROR: [youtube] hZpTGk2nDOc: Video unavailable. This video is not available
+2026-03-23 16:50:32,272 - src.downloader - ERROR - [26] Download failed: ERROR: [youtube] qaLeO-2Fytg: Video unavailable. This video contains content from Aniplex Inc., who has blocked it on copyright grounds
+2026-03-23 16:50:44,258 - src.downloader - INFO - [27] Downloaded successfully.
+2026-03-23 16:50:45,955 - src.downloader - ERROR - [28] Download failed: ERROR: [youtube] VGT_mKDgtow: Video unavailable. This video is private
+2026-03-23 16:50:57,095 - src.downloader - INFO - [29] Downloaded successfully.
+2026-03-23 16:50:58,759 - src.downloader - ERROR - [30] Download failed: ERROR: [youtube] ZuI8Siwv-no: Video unavailable
+2026-03-23 16:51:21,576 - src.downloader - INFO - [31] Downloaded successfully.
+2026-03-23 16:51:34,045 - src.downloader - INFO - [32] Downloaded successfully.
+2026-03-23 16:51:46,600 - src.downloader - INFO - [33] Downloaded successfully.
+2026-03-23 16:51:58,405 - src.downloader - INFO - [34] Downloaded successfully.
+2026-03-23 16:52:10,606 - src.downloader - INFO - [35] Downloaded successfully.
+2026-03-23 16:52:27,802 - src.downloader - INFO - [36] Downloaded successfully.
+2026-03-23 16:52:29,465 - src.downloader - ERROR - [37] Download failed: ERROR: [youtube] kErJOepkDQk: Video unavailable. This video is no longer available due to a copyright claim by 株式会社バンダイナムコフィルムワークス
+2026-03-23 16:52:39,724 - src.downloader - INFO - [38] Downloaded successfully.
+2026-03-23 16:52:50,418 - src.downloader - INFO - [39] Downloaded successfully.
+2026-03-23 16:53:03,855 - src.downloader - INFO - [40] Downloaded successfully.
+2026-03-23 16:53:18,120 - src.downloader - INFO - [41] Downloaded successfully.
+2026-03-23 16:53:28,946 - src.downloader - INFO - [42] Downloaded successfully.
+2026-03-23 16:53:46,826 - src.downloader - INFO - [43] Downloaded successfully.
+2026-03-23 16:53:58,807 - src.downloader - INFO - [44] Downloaded successfully.
+2026-03-23 16:54:11,803 - src.downloader - INFO - [45] Downloaded successfully.
+2026-03-23 16:54:26,022 - src.downloader - INFO - [46] Downloaded successfully.
+2026-03-23 16:54:38,650 - src.downloader - INFO - [47] Downloaded successfully.
+2026-03-23 16:54:50,474 - src.downloader - INFO - [48] Downloaded successfully.
+2026-03-23 16:55:02,144 - src.downloader - INFO - [49] Downloaded successfully.
+2026-03-23 16:55:12,088 - src.downloader - INFO - [50] Downloaded successfully.
+2026-03-23 16:55:23,635 - src.downloader - INFO - [51] Downloaded successfully.
+2026-03-23 16:55:35,572 - src.downloader - INFO - [52] Downloaded successfully.
+2026-03-23 16:55:46,455 - src.downloader - INFO - [53] Downloaded successfully.
+2026-03-23 16:56:00,584 - src.downloader - INFO - [54] Downloaded successfully.
+2026-03-23 16:56:13,483 - src.downloader - INFO - [55] Downloaded successfully.
+2026-03-23 16:56:15,081 - src.downloader - ERROR - [56] Download failed: ERROR: [youtube] izIS1nzRqCc: Video unavailable. This video is private
+2026-03-23 16:56:17,243 - src.downloader - ERROR - [57] Download failed: ERROR: [youtube] R3shsgKbd_M: Video unavailable. This video contains content from KADOKAWA CORPORATION, who has blocked it on copyright grounds
+2026-03-23 16:56:19,246 - src.downloader - ERROR - [58] Download failed: ERROR: [youtube] ey0T9h1Ibng: Video unavailable. This video contains content from KADOKAWA CORPORATION, who has blocked it on copyright grounds
+2026-03-23 16:56:31,514 - src.downloader - INFO - [59] Downloaded successfully.
+2026-03-23 16:56:33,186 - src.downloader - ERROR - [60] Download failed: ERROR: [youtube] Fc-XPJE3oeM: Video unavailable. This video is no longer available because the YouTube account associated with this video has been terminated.
+2026-03-23 16:56:50,328 - src.downloader - INFO - [61] Downloaded successfully.
+2026-03-23 16:57:02,592 - src.downloader - INFO - [62] Downloaded successfully.
+2026-03-23 16:57:04,555 - src.downloader - ERROR - [63] Download failed: ERROR: [youtube] xkH8ti1gakE: Video unavailable. This video contains content from SME, who has blocked it in your country on copyright grounds
+2026-03-23 16:57:06,907 - src.video - INFO - [1] Trimmed successfully.
+2026-03-23 16:57:09,321 - src.video - INFO - [2] Trimmed successfully.
+2026-03-23 16:57:11,694 - src.video - INFO - [3] Trimmed successfully.
+2026-03-23 16:57:11,694 - src.video - ERROR - [4] No downloaded file found, skipping trim.
+2026-03-23 16:57:14,047 - src.video - INFO - [5] Trimmed successfully.
+2026-03-23 16:57:16,401 - src.video - INFO - [6] Trimmed successfully.
+2026-03-23 16:57:18,746 - src.video - INFO - [7] Trimmed successfully.
+2026-03-23 16:57:21,017 - src.video - INFO - [8] Trimmed successfully.
+2026-03-23 16:57:23,379 - src.video - INFO - [9] Trimmed successfully.
+2026-03-23 16:57:23,380 - src.video - ERROR - [10] No downloaded file found, skipping trim.
+2026-03-23 16:57:25,730 - src.video - INFO - [11] Trimmed successfully.
+2026-03-23 16:57:28,080 - src.video - INFO - [12] Trimmed successfully.
+2026-03-23 16:57:28,081 - src.video - ERROR - [13] No downloaded file found, skipping trim.
+2026-03-23 16:57:28,081 - src.video - ERROR - [14] No downloaded file found, skipping trim.
+2026-03-23 16:57:30,451 - src.video - INFO - [15] Trimmed successfully.
+2026-03-23 16:57:32,830 - src.video - INFO - [16] Trimmed successfully.
+2026-03-23 16:57:32,831 - src.video - ERROR - [17] No downloaded file found, skipping trim.
+2026-03-23 16:57:35,105 - src.video - INFO - [18] Trimmed successfully.
+2026-03-23 16:57:37,488 - src.video - INFO - [19] Trimmed successfully.
+2026-03-23 16:57:39,888 - src.video - INFO - [20] Trimmed successfully.
+2026-03-23 16:57:42,229 - src.video - INFO - [21] Trimmed successfully.
+2026-03-23 16:57:44,584 - src.video - INFO - [22] Trimmed successfully.
+2026-03-23 16:57:44,585 - src.video - ERROR - [23] No downloaded file found, skipping trim.
+2026-03-23 16:57:44,585 - src.video - ERROR - [24] No downloaded file found, skipping trim.
+2026-03-23 16:57:44,585 - src.video - ERROR - [25] No downloaded file found, skipping trim.
+2026-03-23 16:57:44,585 - src.video - ERROR - [26] No downloaded file found, skipping trim.
+2026-03-23 16:57:46,953 - src.video - INFO - [27] Trimmed successfully.
+2026-03-23 16:57:46,953 - src.video - ERROR - [28] No downloaded file found, skipping trim.
+2026-03-23 16:57:49,285 - src.video - INFO - [29] Trimmed successfully.
+2026-03-23 16:57:49,286 - src.video - ERROR - [30] No downloaded file found, skipping trim.
+2026-03-23 16:57:51,654 - src.video - INFO - [31] Trimmed successfully.
+2026-03-23 16:57:54,011 - src.video - INFO - [32] Trimmed successfully.
+2026-03-23 16:57:56,388 - src.video - INFO - [33] Trimmed successfully.
+2026-03-23 16:57:58,743 - src.video - INFO - [34] Trimmed successfully.
+2026-03-23 16:58:01,113 - src.video - INFO - [35] Trimmed successfully.
+2026-03-23 16:58:03,391 - src.video - INFO - [36] Trimmed successfully.
+2026-03-23 16:58:03,392 - src.video - ERROR - [37] No downloaded file found, skipping trim.
+2026-03-23 16:58:05,733 - src.video - INFO - [38] Trimmed successfully.
+2026-03-23 16:58:08,073 - src.video - INFO - [39] Trimmed successfully.
+2026-03-23 16:58:10,444 - src.video - INFO - [40] Trimmed successfully.
+2026-03-23 16:58:12,828 - src.video - INFO - [41] Trimmed successfully.
+2026-03-23 16:58:15,094 - src.video - INFO - [42] Trimmed successfully.
+2026-03-23 16:58:17,454 - src.video - INFO - [43] Trimmed successfully.
+2026-03-23 16:58:19,729 - src.video - INFO - [44] Trimmed successfully.
+2026-03-23 16:58:22,172 - src.video - INFO - [45] Trimmed successfully.
+2026-03-23 16:58:24,527 - src.video - INFO - [46] Trimmed successfully.
+2026-03-23 16:58:26,903 - src.video - INFO - [47] Trimmed successfully.
+2026-03-23 16:58:29,262 - src.video - INFO - [48] Trimmed successfully.
+2026-03-23 16:58:31,621 - src.video - INFO - [49] Trimmed successfully.
+2026-03-23 16:58:33,960 - src.video - INFO - [50] Trimmed successfully.
+2026-03-23 16:58:36,320 - src.video - INFO - [51] Trimmed successfully.
+2026-03-23 16:58:38,690 - src.video - INFO - [52] Trimmed successfully.
+2026-03-23 16:58:40,957 - src.video - INFO - [53] Trimmed successfully.
+2026-03-23 16:58:43,318 - src.video - INFO - [54] Trimmed successfully.
+2026-03-23 16:58:45,674 - src.video - INFO - [55] Trimmed successfully.
+2026-03-23 16:58:45,675 - src.video - ERROR - [56] No downloaded file found, skipping trim.
+2026-03-23 16:58:45,675 - src.video - ERROR - [57] No downloaded file found, skipping trim.
+2026-03-23 16:58:45,675 - src.video - ERROR - [58] No downloaded file found, skipping trim.
+2026-03-23 16:58:48,028 - src.video - INFO - [59] Trimmed successfully.
+2026-03-23 16:58:48,028 - src.video - ERROR - [60] No downloaded file found, skipping trim.
+2026-03-23 16:58:50,397 - src.video - INFO - [61] Trimmed successfully.
+2026-03-23 16:58:52,768 - src.video - INFO - [62] Trimmed successfully.
+2026-03-23 16:58:52,769 - src.video - ERROR - [63] No downloaded file found, skipping trim.
+2026-03-23 16:58:53,693 - src.video - INFO - [1] Normalised successfully.
+2026-03-23 16:58:54,647 - src.video - INFO - [2] Normalised successfully.
+2026-03-23 16:58:55,495 - src.video - INFO - [3] Normalised successfully.
+2026-03-23 16:58:55,498 - src.video - ERROR - [4] No trimmed file found, skipping normalize.
+2026-03-23 16:58:56,350 - src.video - INFO - [5] Normalised successfully.
+2026-03-23 16:58:57,197 - src.video - INFO - [6] Normalised successfully.
+2026-03-23 16:58:58,081 - src.video - INFO - [7] Normalised successfully.
+2026-03-23 16:58:58,913 - src.video - INFO - [8] Normalised successfully.
+2026-03-23 16:58:59,761 - src.video - INFO - [9] Normalised successfully.
+2026-03-23 16:58:59,762 - src.video - ERROR - [10] No trimmed file found, skipping normalize.
+2026-03-23 16:59:00,673 - src.video - INFO - [11] Normalised successfully.
+2026-03-23 16:59:01,504 - src.video - INFO - [12] Normalised successfully.
+2026-03-23 16:59:01,505 - src.video - ERROR - [13] No trimmed file found, skipping normalize.
+2026-03-23 16:59:01,506 - src.video - ERROR - [14] No trimmed file found, skipping normalize.
+2026-03-23 16:59:02,396 - src.video - INFO - [15] Normalised successfully.
+2026-03-23 16:59:03,268 - src.video - INFO - [16] Normalised successfully.
+2026-03-23 16:59:03,270 - src.video - ERROR - [17] No trimmed file found, skipping normalize.
+2026-03-23 16:59:04,179 - src.video - INFO - [18] Normalised successfully.
+2026-03-23 16:59:05,097 - src.video - INFO - [19] Normalised successfully.
+2026-03-23 16:59:06,023 - src.video - INFO - [20] Normalised successfully.
+2026-03-23 16:59:06,906 - src.video - INFO - [21] Normalised successfully.
+2026-03-23 16:59:07,811 - src.video - INFO - [22] Normalised successfully.
+2026-03-23 16:59:07,814 - src.video - ERROR - [23] No trimmed file found, skipping normalize.
+2026-03-23 16:59:07,814 - src.video - ERROR - [24] No trimmed file found, skipping normalize.
+2026-03-23 16:59:07,814 - src.video - ERROR - [25] No trimmed file found, skipping normalize.
+2026-03-23 16:59:07,814 - src.video - ERROR - [26] No trimmed file found, skipping normalize.
+2026-03-23 16:59:08,636 - src.video - INFO - [27] Normalised successfully.
+2026-03-23 16:59:08,638 - src.video - ERROR - [28] No trimmed file found, skipping normalize.
+2026-03-23 16:59:09,575 - src.video - INFO - [29] Normalised successfully.
+2026-03-23 16:59:09,577 - src.video - ERROR - [30] No trimmed file found, skipping normalize.
+2026-03-23 16:59:10,467 - src.video - INFO - [31] Normalised successfully.
+2026-03-23 16:59:11,371 - src.video - INFO - [32] Normalised successfully.
+2026-03-23 16:59:12,192 - src.video - INFO - [33] Normalised successfully.
+2026-03-23 16:59:13,051 - src.video - INFO - [34] Normalised successfully.
+2026-03-23 16:59:13,952 - src.video - INFO - [35] Normalised successfully.
+2026-03-23 16:59:14,782 - src.video - INFO - [36] Normalised successfully.
+2026-03-23 16:59:14,783 - src.video - ERROR - [37] No trimmed file found, skipping normalize.
+2026-03-23 16:59:15,677 - src.video - INFO - [38] Normalised successfully.
+2026-03-23 16:59:16,537 - src.video - INFO - [39] Normalised successfully.
+2026-03-23 16:59:17,419 - src.video - INFO - [40] Normalised successfully.
+2026-03-23 16:59:18,298 - src.video - INFO - [41] Normalised successfully.
+2026-03-23 16:59:19,094 - src.video - INFO - [42] Normalised successfully.
+2026-03-23 16:59:20,027 - src.video - INFO - [43] Normalised successfully.
+2026-03-23 16:59:21,009 - src.video - INFO - [44] Normalised successfully.
+2026-03-23 16:59:21,964 - src.video - INFO - [45] Normalised successfully.
+2026-03-23 16:59:22,871 - src.video - INFO - [46] Normalised successfully.
+2026-03-23 16:59:24,242 - src.video - INFO - [47] Normalised successfully.
+2026-03-23 16:59:25,173 - src.video - INFO - [48] Normalised successfully.
+2026-03-23 16:59:26,101 - src.video - INFO - [49] Normalised successfully.
+2026-03-23 16:59:26,970 - src.video - INFO - [50] Normalised successfully.
+2026-03-23 16:59:27,907 - src.video - INFO - [51] Normalised successfully.
+2026-03-23 16:59:29,271 - src.video - INFO - [52] Normalised successfully.
+2026-03-23 16:59:30,003 - src.video - INFO - [53] Normalised successfully.
+2026-03-23 16:59:30,910 - src.video - INFO - [54] Normalised successfully.
+2026-03-23 16:59:31,843 - src.video - INFO - [55] Normalised successfully.
+2026-03-23 16:59:31,845 - src.video - ERROR - [56] No trimmed file found, skipping normalize.
+2026-03-23 16:59:31,845 - src.video - ERROR - [57] No trimmed file found, skipping normalize.
+2026-03-23 16:59:31,845 - src.video - ERROR - [58] No trimmed file found, skipping normalize.
+2026-03-23 16:59:32,686 - src.video - INFO - [59] Normalised successfully.
+2026-03-23 16:59:32,688 - src.video - ERROR - [60] No trimmed file found, skipping normalize.
+2026-03-23 16:59:33,592 - src.video - INFO - [61] Normalised successfully.
+2026-03-23 16:59:34,455 - src.video - INFO - [62] Normalised successfully.
+2026-03-23 16:59:34,457 - src.video - ERROR - [63] No trimmed file found, skipping normalize.
+2026-03-23 16:59:34,487 - src.image - INFO - [1] Overlay generated.
+2026-03-23 16:59:34,506 - src.image - INFO - [2] Overlay generated.
+2026-03-23 16:59:34,524 - src.image - INFO - [3] Overlay generated.
+2026-03-23 16:59:34,542 - src.image - INFO - [4] Overlay generated.
+2026-03-23 16:59:34,560 - src.image - INFO - [5] Overlay generated.
+2026-03-23 16:59:34,578 - src.image - INFO - [6] Overlay generated.
+2026-03-23 16:59:34,597 - src.image - INFO - [7] Overlay generated.
+2026-03-23 16:59:34,615 - src.image - INFO - [8] Overlay generated.
+2026-03-23 16:59:34,632 - src.image - INFO - [9] Overlay generated.
+2026-03-23 16:59:34,651 - src.image - INFO - [10] Overlay generated.
+2026-03-23 16:59:34,668 - src.image - INFO - [11] Overlay generated.
+2026-03-23 16:59:34,687 - src.image - INFO - [12] Overlay generated.
+2026-03-23 16:59:34,706 - src.image - INFO - [13] Overlay generated.
+2026-03-23 16:59:34,725 - src.image - INFO - [14] Overlay generated.
+2026-03-23 16:59:34,743 - src.image - INFO - [15] Overlay generated.
+2026-03-23 16:59:34,761 - src.image - INFO - [16] Overlay generated.
+2026-03-23 16:59:34,778 - src.image - INFO - [17] Overlay generated.
+2026-03-23 16:59:34,797 - src.image - INFO - [18] Overlay generated.
+2026-03-23 16:59:34,815 - src.image - INFO - [19] Overlay generated.
+2026-03-23 16:59:34,833 - src.image - INFO - [20] Overlay generated.
+2026-03-23 16:59:34,850 - src.image - INFO - [21] Overlay generated.
+2026-03-23 16:59:34,868 - src.image - INFO - [22] Overlay generated.
+2026-03-23 16:59:34,887 - src.image - INFO - [23] Overlay generated.
+2026-03-23 16:59:34,906 - src.image - INFO - [24] Overlay generated.
+2026-03-23 16:59:34,923 - src.image - INFO - [25] Overlay generated.
+2026-03-23 16:59:34,941 - src.image - INFO - [26] Overlay generated.
+2026-03-23 16:59:34,961 - src.image - INFO - [27] Overlay generated.
+2026-03-23 16:59:34,980 - src.image - INFO - [28] Overlay generated.
+2026-03-23 16:59:34,998 - src.image - INFO - [29] Overlay generated.
+2026-03-23 16:59:35,016 - src.image - INFO - [30] Overlay generated.
+2026-03-23 16:59:35,035 - src.image - INFO - [31] Overlay generated.
+2026-03-23 16:59:35,053 - src.image - INFO - [32] Overlay generated.
+2026-03-23 16:59:35,072 - src.image - INFO - [33] Overlay generated.
+2026-03-23 16:59:35,090 - src.image - INFO - [34] Overlay generated.
+2026-03-23 16:59:35,109 - src.image - INFO - [35] Overlay generated.
+2026-03-23 16:59:35,127 - src.image - INFO - [36] Overlay generated.
+2026-03-23 16:59:35,145 - src.image - INFO - [37] Overlay generated.
+2026-03-23 16:59:35,163 - src.image - INFO - [38] Overlay generated.
+2026-03-23 16:59:35,182 - src.image - INFO - [39] Overlay generated.
+2026-03-23 16:59:35,200 - src.image - INFO - [40] Overlay generated.
+2026-03-23 16:59:35,219 - src.image - INFO - [41] Overlay generated.
+2026-03-23 16:59:35,238 - src.image - INFO - [42] Overlay generated.
+2026-03-23 16:59:35,256 - src.image - INFO - [43] Overlay generated.
+2026-03-23 16:59:35,275 - src.image - INFO - [44] Overlay generated.
+2026-03-23 16:59:35,293 - src.image - INFO - [45] Overlay generated.
+2026-03-23 16:59:35,311 - src.image - INFO - [46] Overlay generated.
+2026-03-23 16:59:35,328 - src.image - INFO - [47] Overlay generated.
+2026-03-23 16:59:35,346 - src.image - INFO - [48] Overlay generated.
+2026-03-23 16:59:35,364 - src.image - INFO - [49] Overlay generated.
+2026-03-23 16:59:35,383 - src.image - INFO - [50] Overlay generated.
+2026-03-23 16:59:35,401 - src.image - INFO - [51] Overlay generated.
+2026-03-23 16:59:35,419 - src.image - INFO - [52] Overlay generated.
+2026-03-23 16:59:35,437 - src.image - INFO - [53] Overlay generated.
+2026-03-23 16:59:35,456 - src.image - INFO - [54] Overlay generated.
+2026-03-23 16:59:35,475 - src.image - INFO - [55] Overlay generated.
+2026-03-23 16:59:35,493 - src.image - INFO - [56] Overlay generated.
+2026-03-23 16:59:35,512 - src.image - INFO - [57] Overlay generated.
+2026-03-23 16:59:35,530 - src.image - INFO - [58] Overlay generated.
+2026-03-23 16:59:35,548 - src.image - INFO - [59] Overlay generated.
+2026-03-23 16:59:35,568 - src.image - INFO - [60] Overlay generated.
+2026-03-23 16:59:35,586 - src.image - INFO - [61] Overlay generated.
+2026-03-23 16:59:35,604 - src.image - INFO - [62] Overlay generated.
+2026-03-23 16:59:35,622 - src.image - INFO - [63] Overlay generated.
+2026-03-23 16:59:37,916 - src.video - INFO - [1] Overlay applied successfully.
+2026-03-23 16:59:40,296 - src.video - INFO - [2] Overlay applied successfully.
+2026-03-23 16:59:42,675 - src.video - INFO - [3] Overlay applied successfully.
+2026-03-23 16:59:42,678 - src.video - ERROR - [4] No normalised file found, skipping overlay.
+2026-03-23 16:59:45,035 - src.video - INFO - [5] Overlay applied successfully.
+2026-03-23 16:59:47,386 - src.video - INFO - [6] Overlay applied successfully.
+2026-03-23 16:59:49,755 - src.video - INFO - [7] Overlay applied successfully.
+2026-03-23 16:59:52,102 - src.video - INFO - [8] Overlay applied successfully.
+2026-03-23 16:59:54,449 - src.video - INFO - [9] Overlay applied successfully.
+2026-03-23 16:59:54,451 - src.video - ERROR - [10] No normalised file found, skipping overlay.
+2026-03-23 16:59:56,798 - src.video - INFO - [11] Overlay applied successfully.
+2026-03-23 16:59:59,147 - src.video - INFO - [12] Overlay applied successfully.
+2026-03-23 16:59:59,148 - src.video - ERROR - [13] No normalised file found, skipping overlay.
+2026-03-23 16:59:59,148 - src.video - ERROR - [14] No normalised file found, skipping overlay.
+2026-03-23 17:00:01,506 - src.video - INFO - [15] Overlay applied successfully.
+2026-03-23 17:00:03,874 - src.video - INFO - [16] Overlay applied successfully.
+2026-03-23 17:00:03,877 - src.video - ERROR - [17] No normalised file found, skipping overlay.
+2026-03-23 17:00:06,230 - src.video - INFO - [18] Overlay applied successfully.
+2026-03-23 17:00:08,601 - src.video - INFO - [19] Overlay applied successfully.
+2026-03-23 17:00:10,977 - src.video - INFO - [20] Overlay applied successfully.
+2026-03-23 17:00:13,339 - src.video - INFO - [21] Overlay applied successfully.
+2026-03-23 17:00:15,704 - src.video - INFO - [22] Overlay applied successfully.
+2026-03-23 17:00:15,707 - src.video - ERROR - [23] No normalised file found, skipping overlay.
+2026-03-23 17:00:15,707 - src.video - ERROR - [24] No normalised file found, skipping overlay.
+2026-03-23 17:00:15,707 - src.video - ERROR - [25] No normalised file found, skipping overlay.
+2026-03-23 17:00:15,707 - src.video - ERROR - [26] No normalised file found, skipping overlay.
+2026-03-23 17:00:18,051 - src.video - INFO - [27] Overlay applied successfully.
+2026-03-23 17:00:18,052 - src.video - ERROR - [28] No normalised file found, skipping overlay.
+2026-03-23 17:00:20,415 - src.video - INFO - [29] Overlay applied successfully.
+2026-03-23 17:00:20,417 - src.video - ERROR - [30] No normalised file found, skipping overlay.
+2026-03-23 17:00:22,782 - src.video - INFO - [31] Overlay applied successfully.
+2026-03-23 17:00:25,134 - src.video - INFO - [32] Overlay applied successfully.
+2026-03-23 17:00:27,493 - src.video - INFO - [33] Overlay applied successfully.
+2026-03-23 17:00:29,853 - src.video - INFO - [34] Overlay applied successfully.
+2026-03-23 17:00:32,214 - src.video - INFO - [35] Overlay applied successfully.
+2026-03-23 17:00:34,586 - src.video - INFO - [36] Overlay applied successfully.
+2026-03-23 17:00:34,588 - src.video - ERROR - [37] No normalised file found, skipping overlay.
+2026-03-23 17:00:36,948 - src.video - INFO - [38] Overlay applied successfully.
+2026-03-23 17:00:39,295 - src.video - INFO - [39] Overlay applied successfully.
+2026-03-23 17:00:41,656 - src.video - INFO - [40] Overlay applied successfully.
+2026-03-23 17:00:44,011 - src.video - INFO - [41] Overlay applied successfully.
+2026-03-23 17:00:46,373 - src.video - INFO - [42] Overlay applied successfully.
+2026-03-23 17:00:48,736 - src.video - INFO - [43] Overlay applied successfully.
+2026-03-23 17:00:51,089 - src.video - INFO - [44] Overlay applied successfully.
+2026-03-23 17:00:53,485 - src.video - INFO - [45] Overlay applied successfully.
+2026-03-23 17:00:55,857 - src.video - INFO - [46] Overlay applied successfully.
+2026-03-23 17:00:58,218 - src.video - INFO - [47] Overlay applied successfully.
+2026-03-23 17:01:00,589 - src.video - INFO - [48] Overlay applied successfully.
+2026-03-23 17:01:02,942 - src.video - INFO - [49] Overlay applied successfully.
+2026-03-23 17:01:05,303 - src.video - INFO - [50] Overlay applied successfully.
+2026-03-23 17:01:07,687 - src.video - INFO - [51] Overlay applied successfully.
+2026-03-23 17:01:10,046 - src.video - INFO - [52] Overlay applied successfully.
+2026-03-23 17:01:12,399 - src.video - INFO - [53] Overlay applied successfully.
+2026-03-23 17:01:14,764 - src.video - INFO - [54] Overlay applied successfully.
+2026-03-23 17:01:17,119 - src.video - INFO - [55] Overlay applied successfully.
+2026-03-23 17:01:17,121 - src.video - ERROR - [56] No normalised file found, skipping overlay.
+2026-03-23 17:01:17,121 - src.video - ERROR - [57] No normalised file found, skipping overlay.
+2026-03-23 17:01:17,121 - src.video - ERROR - [58] No normalised file found, skipping overlay.
+2026-03-23 17:01:19,481 - src.video - INFO - [59] Overlay applied successfully.
+2026-03-23 17:01:19,483 - src.video - ERROR - [60] No normalised file found, skipping overlay.
+2026-03-23 17:01:21,837 - src.video - INFO - [61] Overlay applied successfully.
+2026-03-23 17:01:24,207 - src.video - INFO - [62] Overlay applied successfully.
+2026-03-23 17:01:24,208 - src.video - ERROR - [63] No normalised file found, skipping overlay.
+2026-03-23 17:01:26,579 - src.video - INFO - [1] Faded successfully.
+2026-03-23 17:01:28,987 - src.video - INFO - [2] Faded successfully.
+2026-03-23 17:01:31,380 - src.video - INFO - [3] Faded successfully.
+2026-03-23 17:01:31,383 - src.video - ERROR - [4] No overlayed file found, skipping fade.
+2026-03-23 17:01:33,758 - src.video - INFO - [5] Faded successfully.
+2026-03-23 17:01:36,130 - src.video - INFO - [6] Faded successfully.
+2026-03-23 17:01:38,524 - src.video - INFO - [7] Faded successfully.
+2026-03-23 17:01:40,891 - src.video - INFO - [8] Faded successfully.
+2026-03-23 17:01:43,262 - src.video - INFO - [9] Faded successfully.
+2026-03-23 17:01:43,263 - src.video - ERROR - [10] No overlayed file found, skipping fade.
+2026-03-23 17:01:45,635 - src.video - INFO - [11] Faded successfully.
+2026-03-23 17:01:48,010 - src.video - INFO - [12] Faded successfully.
+2026-03-23 17:01:48,011 - src.video - ERROR - [13] No overlayed file found, skipping fade.
+2026-03-23 17:01:48,011 - src.video - ERROR - [14] No overlayed file found, skipping fade.
+2026-03-23 17:01:50,388 - src.video - INFO - [15] Faded successfully.
+2026-03-23 17:01:52,775 - src.video - INFO - [16] Faded successfully.
+2026-03-23 17:01:52,777 - src.video - ERROR - [17] No overlayed file found, skipping fade.
+2026-03-23 17:01:55,152 - src.video - INFO - [18] Faded successfully.
+2026-03-23 17:01:57,543 - src.video - INFO - [19] Faded successfully.
+2026-03-23 17:01:59,941 - src.video - INFO - [20] Faded successfully.
+2026-03-23 17:02:02,322 - src.video - INFO - [21] Faded successfully.
+2026-03-23 17:02:04,703 - src.video - INFO - [22] Faded successfully.
+2026-03-23 17:02:04,706 - src.video - ERROR - [23] No overlayed file found, skipping fade.
+2026-03-23 17:02:04,706 - src.video - ERROR - [24] No overlayed file found, skipping fade.
+2026-03-23 17:02:04,706 - src.video - ERROR - [25] No overlayed file found, skipping fade.
+2026-03-23 17:02:04,706 - src.video - ERROR - [26] No overlayed file found, skipping fade.
+2026-03-23 17:02:07,072 - src.video - INFO - [27] Faded successfully.
+2026-03-23 17:02:07,074 - src.video - ERROR - [28] No overlayed file found, skipping fade.
+2026-03-23 17:02:09,460 - src.video - INFO - [29] Faded successfully.
+2026-03-23 17:02:09,462 - src.video - ERROR - [30] No overlayed file found, skipping fade.
+2026-03-23 17:02:11,855 - src.video - INFO - [31] Faded successfully.
+2026-03-23 17:02:14,229 - src.video - INFO - [32] Faded successfully.
+2026-03-23 17:02:16,611 - src.video - INFO - [33] Faded successfully.
+2026-03-23 17:02:18,988 - src.video - INFO - [34] Faded successfully.
+2026-03-23 17:02:21,371 - src.video - INFO - [35] Faded successfully.
+2026-03-23 17:02:23,765 - src.video - INFO - [36] Faded successfully.
+2026-03-23 17:02:23,766 - src.video - ERROR - [37] No overlayed file found, skipping fade.
+2026-03-23 17:02:26,146 - src.video - INFO - [38] Faded successfully.
+2026-03-23 17:02:28,515 - src.video - INFO - [39] Faded successfully.
+2026-03-23 17:02:30,893 - src.video - INFO - [40] Faded successfully.
+2026-03-23 17:02:33,265 - src.video - INFO - [41] Faded successfully.
+2026-03-23 17:02:35,645 - src.video - INFO - [42] Faded successfully.
+2026-03-23 17:02:38,024 - src.video - INFO - [43] Faded successfully.
+2026-03-23 17:02:40,398 - src.video - INFO - [44] Faded successfully.
+2026-03-23 17:02:42,816 - src.video - INFO - [45] Faded successfully.
+2026-03-23 17:02:45,205 - src.video - INFO - [46] Faded successfully.
+2026-03-23 17:02:47,583 - src.video - INFO - [47] Faded successfully.
+2026-03-23 17:02:49,973 - src.video - INFO - [48] Faded successfully.
+2026-03-23 17:02:52,345 - src.video - INFO - [49] Faded successfully.
+2026-03-23 17:02:54,732 - src.video - INFO - [50] Faded successfully.
+2026-03-23 17:02:57,130 - src.video - INFO - [51] Faded successfully.
+2026-03-23 17:02:59,505 - src.video - INFO - [52] Faded successfully.
+2026-03-23 17:03:01,881 - src.video - INFO - [53] Faded successfully.
+2026-03-23 17:03:04,261 - src.video - INFO - [54] Faded successfully.
+2026-03-23 17:03:06,632 - src.video - INFO - [55] Faded successfully.
+2026-03-23 17:03:06,634 - src.video - ERROR - [56] No overlayed file found, skipping fade.
+2026-03-23 17:03:06,634 - src.video - ERROR - [57] No overlayed file found, skipping fade.
+2026-03-23 17:03:06,634 - src.video - ERROR - [58] No overlayed file found, skipping fade.
+2026-03-23 17:03:09,016 - src.video - INFO - [59] Faded successfully.
+2026-03-23 17:03:09,018 - src.video - ERROR - [60] No overlayed file found, skipping fade.
+2026-03-23 17:03:11,392 - src.video - INFO - [61] Faded successfully.
+2026-03-23 17:03:13,781 - src.video - INFO - [62] Faded successfully.
+2026-03-23 17:03:13,783 - src.video - ERROR - [63] No overlayed file found, skipping fade.
+2026-03-23 17:06:21,792 - src.video - WARNING - [4] No faded file found, skipping.
+2026-03-23 17:06:21,793 - src.video - WARNING - [10] No faded file found, skipping.
+2026-03-23 17:06:21,793 - src.video - WARNING - [13] No faded file found, skipping.
+2026-03-23 17:06:21,793 - src.video - WARNING - [14] No faded file found, skipping.
+2026-03-23 17:06:21,793 - src.video - WARNING - [17] No faded file found, skipping.
+2026-03-23 17:06:21,793 - src.video - WARNING - [23] No faded file found, skipping.
+2026-03-23 17:06:21,793 - src.video - WARNING - [24] No faded file found, skipping.
+2026-03-23 17:06:21,793 - src.video - WARNING - [25] No faded file found, skipping.
+2026-03-23 17:06:21,793 - src.video - WARNING - [26] No faded file found, skipping.
+2026-03-23 17:06:21,793 - src.video - WARNING - [28] No faded file found, skipping.
+2026-03-23 17:06:21,793 - src.video - WARNING - [30] No faded file found, skipping.
+2026-03-23 17:06:21,793 - src.video - WARNING - [37] No faded file found, skipping.
+2026-03-23 17:06:21,794 - src.video - WARNING - [56] No faded file found, skipping.
+2026-03-23 17:06:21,794 - src.video - WARNING - [57] No faded file found, skipping.
+2026-03-23 17:06:21,794 - src.video - WARNING - [58] No faded file found, skipping.
+2026-03-23 17:06:21,794 - src.video - WARNING - [60] No faded file found, skipping.
+2026-03-23 17:06:21,794 - src.video - WARNING - [63] No faded file found, skipping.
+2026-03-23 17:06:21,794 - src.video - INFO - Small enough for direct concatenation.
+2026-03-23 17:08:03,361 - src.analytics - INFO - HTML report saved to /home/richter/shed/projects/top_video_project/output/report.html

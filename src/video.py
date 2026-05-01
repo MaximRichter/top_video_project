@@ -8,7 +8,7 @@ import pandas as pd
 from src.config import (
     CONCAT_BATCH_SIZE,
     VAAPI_DEVICE,
-    VIDEOS_CSV,
+    VIDEOS_TSV,
     TRIMMED_DIR,
     OVERLAYED_DIR,
     NORMALISED_DIR,
@@ -76,7 +76,7 @@ def trim_all() -> None:
     """
     Reads videos.csv and trims all downloaded videos.
     """
-    df = pd.read_csv(VIDEOS_CSV, delimiter=';')
+    df = pd.read_csv(VIDEOS_TSV, delimiter="	")
 
     for i in range(len(df)):
         trim_video(
@@ -160,7 +160,7 @@ def normalize_audio(index: int) -> bool:
 
 
 def normalize_all() -> None:
-    df = pd.read_csv(VIDEOS_CSV, delimiter=";")
+    df = pd.read_csv(VIDEOS_TSV, delimiter="	")
     for i in range(len(df)):
         index: int = i + 1
         normalize_audio(index)
@@ -224,7 +224,7 @@ def overlay_video(index: int) -> bool:
 
 
 def overlay_all() -> None:
-    df = pd.read_csv(VIDEOS_CSV, delimiter=";")
+    df = pd.read_csv(VIDEOS_TSV, delimiter="	")
     for i in range(len(df)):
         overlay_video(i + 1)
 
@@ -315,7 +315,7 @@ def fade_video(index: int) -> bool:
 
 
 def fade_all() -> None:
-    df = pd.read_csv(VIDEOS_CSV, delimiter=";")
+    df = pd.read_csv(VIDEOS_TSV, delimiter="	")
     for i in range(len(df)):
         fade_video(i + 1)
 
@@ -378,7 +378,7 @@ def concat_batch(files: list, output_path, vaapi_device: list) -> bool:
 
 
 def concatenate_all(batch_size: int = CONCAT_BATCH_SIZE) -> bool:
-    df = pd.read_csv(VIDEOS_CSV, delimiter=";")
+    df = pd.read_csv(VIDEOS_TSV, delimiter="	")
     message = (
         "\nConcatenation mode:\n"
         "  [1] Only concatenate if all downloaded videos are present\n"

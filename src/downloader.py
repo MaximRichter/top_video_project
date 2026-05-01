@@ -3,7 +3,7 @@ import logging
 import json
 import pandas as pd
 
-from src.config import VIDEOS_CSV, DOWNLOADS_DIR, BROWSER_COOKIES, ALL_DIRS
+from src.config import VIDEOS_TSV, DOWNLOADS_DIR, BROWSER_COOKIES, ALL_DIRS
 
 logger = logging.getLogger(__name__)
 
@@ -66,7 +66,7 @@ def download_all() -> None:
     """
     Reads videos.csv, syncs the downloads folder, then downloads any missing videos.
     """
-    df = pd.read_csv(VIDEOS_CSV, delimiter=';')
+    df = pd.read_csv(VIDEOS_TSV, delimiter='\t')
     valid_indices = set(range(1, len(df) + 1))
     sync_downloads(valid_indices)
     for i in range(len(df)):

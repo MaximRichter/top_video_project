@@ -1,7 +1,7 @@
 import pandas as pd
 from PIL import Image, ImageDraw, ImageFont
 from src.config import (
-    VIDEOS_CSV,
+    VIDEOS_TSV,
     IMAGES_DIR,
     FONT_BOLD,
     FONT_REGULAR,
@@ -127,7 +127,7 @@ def generate_overlay(index: int, rank: int, anime_name: str, song_name: str, sco
 
 
 def generate_all() -> None:
-    df = pd.read_csv(VIDEOS_CSV, delimiter=";")
+    df = pd.read_csv(VIDEOS_TSV, delimiter="	")
     for i in range(len(df)):
         row = df.iloc[i]
         index = i + 1

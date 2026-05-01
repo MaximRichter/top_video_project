@@ -2,7 +2,7 @@ import pandas as pd
 import plotly.graph_objects as go
 from plotly.subplots import make_subplots
 from pathlib import Path
-from src.config import VIDEOS_CSV, REVIEWERS, OUTPUT_DIR
+from src.config import VIDEOS_TSV, REVIEWERS, OUTPUT_DIR
 import logging
 
 logger = logging.getLogger(__name__)
@@ -11,7 +11,7 @@ REPORT_PATH = OUTPUT_DIR / "report.html"
 
 
 def load_data() -> pd.DataFrame:
-    df = pd.read_csv(VIDEOS_CSV, delimiter=";")
+    df = pd.read_csv(VIDEOS_TSV, delimiter="	")
     reviewer_cols = [r["score_column"] for r in REVIEWERS]
     df["average_score"] = df[reviewer_cols].mean(axis=1)
     df["score_variance"] = df[reviewer_cols].var(axis=1)
